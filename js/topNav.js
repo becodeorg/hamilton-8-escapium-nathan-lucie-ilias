@@ -4,9 +4,7 @@ burger.addEventListener('click', () => {
     menu.classList.toggle('active');
     burger.classList.toggle('active');
 })
-
 let links = document.getElementsByClassName('links_menu');
-
 
 for (let link of links){
     link.addEventListener('click', () => {
@@ -20,6 +18,7 @@ for (let link of links){
     link.nextElementSibling.style.opacity = '1'
  });
 }
+
 
 
 
