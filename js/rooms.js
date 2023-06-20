@@ -43,23 +43,29 @@ function createRooms(json) {
         //creation infos
         let infos = document.createElement('div');
         infos.className = "room_card_infos";
+
+        let groupDiv = document.createElement('div');
         let groupIcon = document.createElement('i');
         groupIcon.className = "fa-solid fa-user-group";
         let groupP = document.createElement('p');
         groupP.innerText = room['players'][0] + "-" + room['players'][1];
+        groupDiv.append(groupIcon,groupP);
 
+        let timeDiv = document.createElement('div');
         let timeIcon = document.createElement('i');
         timeIcon.className = "fa-regular fa-clock";
         let timeP = document.createElement('p');
         timeP.innerText = room['minutes'];
+        timeDiv.append(timeIcon,timeP);
 
-
+        let locationDiv = document.createElement('div');
         let locationIcon = document.createElement('i');
         locationIcon.className = "fa-solid fa-location-dot";
         let locationP = document.createElement('p');
         locationP.innerText = room['location'];
+        locationDiv.append(locationIcon,locationP);
 
-        infos.append(groupIcon,groupP,timeIcon,timeP,locationIcon,locationP);
+        infos.append(groupDiv,timeDiv,locationDiv);
 
         contener.append(infos);
 
