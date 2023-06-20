@@ -29,15 +29,16 @@
                     font-family: $headings;
                 }
             }
-            #container_ligne_red{
+            .containerLigneRed{
                 position: relative;
-                #home {
+                .word_on_red_ligne {
                     z-index: 2;  
                     color : $white_font;
                     font-weight: 800;
                     }             
-                #ligne_red{
+                .ligne_red{
                     position: absolute;
+                    opacity: 0;
                     left:50%;
                     top: 45%;
                     translate: -50%;
@@ -99,12 +100,10 @@
           }
         #nav_links{
             z-index: 99;
-            display: none;
             flex-direction: column;
             position: absolute;
             top: 0;
-            left:  0;
-            width: 0;
+            left:  -200%;
             padding-top: 30px;
             width: 60%;
             min-width: 250px;
@@ -113,8 +112,6 @@
             justify-content: start;
             background-color: $dark_background;
             font-size: 16px ;
-            transform: translateX(-200%);
-            transition: transform 0.5s ease-in-out;
             gap: 0;
             li{
                 margin-left: 50px;
@@ -153,8 +150,7 @@
             }      
         }
         #nav_links.active{
-            display: block;
-            transform: none;
+            left:0;
             position: fixed;
         }
     }
