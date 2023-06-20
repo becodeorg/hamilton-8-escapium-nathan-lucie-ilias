@@ -55,9 +55,9 @@
       padding: 10px 35px 10px 35px;
       border-radius: 50px;
       margin: 150px 10px 15px 10px;
+      transition: background-color 0.5s , border 0.5s;
       &:hover{
-        background-color: $red;
-        border: 2px $red solid;
+        background-color: #3C3F3E;
         cursor: pointer;
       }
     }
@@ -83,6 +83,9 @@
       justify-content: center;
       padding-left: 35px;
       box-shadow: 0 0 1em black;
+      &:hover{
+        background-size: 250% !important;
+      }
 
       .room_card_difficulty{
         margin-top: 70%;
@@ -121,6 +124,7 @@
     }
   }
 
+
   #rooms_nav{
     display: flex;
     justify-content: center;
@@ -135,6 +139,7 @@
       border-radius: 100%;
       padding: 10px;
       margin-left: 15px;
+      transition: background-color 0.5s;
       &:hover{
         cursor: pointer;
         background-color: $red;
@@ -184,9 +189,7 @@
       }
 
       .room_card_name{
-
         font-size: 18px !important;
-
       }
 
       .room_card_infos{
