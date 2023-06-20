@@ -1,12 +1,13 @@
 
 #top_nav{
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: flex;
     height: 85px;
     align-items: center;
     justify-content: space-between;
-    background-color: $darkest_background;
+    background-color: $darkest_background2;
+    z-index: 2;
 
 
     #leftTopBar{
@@ -24,7 +25,7 @@
                 a{
                     text-decoration: none;
                     font-size: 18px ;
-                    color : $nav_font_links_desktop;
+                    color : $nav_font_color;
                     font-weight: 700;
                     font-family: $headings;
                 }
@@ -81,7 +82,7 @@
     }
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1320px){
     #top_nav{
         #burger{
             display: block;
@@ -136,7 +137,7 @@
                 rotate: (90deg);
                 transform: translateX(2px);
             }    
-            #ligne_red{
+            .ligne_red{
                 display: none;
             }    
             .grey_ligne{
