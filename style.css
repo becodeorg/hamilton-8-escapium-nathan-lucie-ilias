@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap%27");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap%27");
 * {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -674,13 +680,6 @@
 }
 .columns2 .photo_shots_blogs .archive_blogs ul {
   row-gap: 30px;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
