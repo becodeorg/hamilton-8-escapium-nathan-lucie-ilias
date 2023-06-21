@@ -844,6 +844,9 @@ footer p {
   letter-spacing: -0.3px;
   margin-right: 20px;
 }
+.main_blogs .columns1 .cards .contenu_cards .links_cards a:hover {
+  animation: font_transition_color 1.5s ease-in-out;
+}
 .main_blogs .columns1 .cards .contenu_cards p {
   padding-bottom: 50px;
   font-weight: 500;
@@ -866,6 +869,10 @@ footer p {
   letter-spacing: -0.5px;
   font-family: "Montserrat", sans-serif;
   opacity: 0.8;
+}
+.main_blogs .columns1 .cards .contenu_cards .btn_blogs:hover {
+  background-color: #777;
+  transition: 0.3s ease;
 }
 .main_blogs .columns1 .cards .contenu_cards .bar_grey_bold {
   position: absolute;
@@ -905,6 +912,12 @@ footer p {
   border: none;
   opacity: 1;
 }
+.main_blogs .columns1 .btn_switch_blogs a:hover {
+  background-color: #F60B0E;
+  border: none;
+  opacity: 1;
+  transition: 0.3s ease;
+}
 .main_blogs .columns1 .btn_switch_blogs p {
   color: #717171;
   margin: 0 20px 0 30px;
@@ -931,16 +944,42 @@ footer p {
   opacity: 0.8;
   font-weight: 500;
 }
+.columns2 .relative ul li {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.columns2 .relative ul li:hover {
+  opacity: 1;
+  color: #fefefe;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.columns2 .relative ul li:hover::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F60B0E;
+  animation: red_circle_translate 1s;
+}
 .columns2 .popular_blogs div {
   display: flex;
   align-items: center;
   padding-bottom: 80px;
-  width: 300px;
+  width: 400px;
 }
 .columns2 .popular_blogs div .date {
   font-size: 12px;
   opacity: 0.6;
   font-weight: 500;
+}
+.columns2 .popular_blogs .kidnapped {
+  background-image: url(../images/gallery/room-3.jpg);
+}
+.columns2 .popular_blogs .what_is {
+  background-image: url(../images/gallery/slide-2.jpg);
 }
 .columns2 .popular_blogs h3 {
   font-size: 15px;
@@ -984,6 +1023,10 @@ footer p {
   font-family: "Montserrat", sans-serif;
   margin-left: 10px;
   line-height: 40px;
+}
+.columns2 .tags_blogs .btn_blogs:hover {
+  background-color: #777;
+  transition: 0.3s ease;
 }
 .columns2 .photo_shots_blogs .container_photos_all {
   width: 400px;
@@ -1361,6 +1404,26 @@ footer p {
   .columns2 .photo_shots_blogs .container_photos_all .container_photo_shots {
     height: 120px;
     width: 30%;
+  }
+}
+@keyframes red_circle_translate {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes font_transition_color {
+  0% {
+    color: #F60B0E;
+  }
+  50% {
+    color: rgba(255, 51, 0, 0.651);
+  }
+  100% {
+    opacity: 0.9;
+    color: #717171;
   }
 }
 

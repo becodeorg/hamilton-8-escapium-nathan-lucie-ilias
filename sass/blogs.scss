@@ -122,6 +122,9 @@
                         font-weight: 700;
                         letter-spacing: -0.3px;
                         margin-right: 20px;
+                        &:hover{
+                            animation: font_transition_color 1.5s ease-in-out;
+                        }
                     }
                 }
                 p{
@@ -146,6 +149,10 @@
                     letter-spacing: -0.5px;
                     font-family: $headings;
                     opacity: 0.8;
+                    &:hover{
+                        background-color: $nav_font_color;
+                        transition: 0.3s ease;
+                    }
                 }
 
                 .bar_grey_bold{
@@ -188,6 +195,12 @@
                     border: none;
                     opacity: 1;
                 }
+                &:hover{
+                    background-color: $red;
+                    border: none;
+                    opacity: 1;
+                    transition: 0.3s ease;
+                }
             }
             p{
                 color: $global_font_color;
@@ -215,6 +228,26 @@
             letter-spacing: 2px;
             opacity: 0.8;
             font-weight: 500;
+            li{
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                &:hover{
+                    opacity: 1;
+                    color: $white_font;
+                    transition: 0.3s ease-in;
+                    cursor: pointer;
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: $red;
+                        animation: red_circle_translate 1s;
+                    }
+                }
+            }
         }
     }
     .popular_blogs{
@@ -222,12 +255,18 @@
             display: flex;
             align-items: center;
             padding-bottom: 80px;
-            width: 300px;
+            width: 400px;
             .date{
                 font-size: 12px;
                 opacity: 0.6;
                 font-weight: 500;
             }
+        }
+        .kidnapped{
+            background-image: url(../images/gallery/room-3.jpg); 
+        }
+        .what_is{
+            background-image: url(../images/gallery/slide-2.jpg); 
         }
         h3{
             font-size: 15px;
@@ -271,6 +310,10 @@
             font-family: $headings;
             margin-left: 10px;
             line-height: 40px;
+            &:hover{
+                background-color: $nav_font_color;
+                transition: 0.3s ease;
+            }
         }
     }
     .photo_shots_blogs{
@@ -388,8 +431,7 @@
                     .btn_blogs{
                         padding: 10px 27px;
                         font-size: 9px;
-                    }
-    
+                    }            
                     .bar_grey_bold{
                         position: initial;
                     }
@@ -686,5 +728,28 @@
                 }
             }   
         }
+    }
+}
+
+
+@keyframes red_circle_translate{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes font_transition_color{
+    0%{
+        color:$red;
+    }
+    50%{
+        color: rgba(255, 51, 0, 0.651);
+    }
+    100%{
+        opacity: 0.9;
+        color : $global_font_color;
     }
 }
