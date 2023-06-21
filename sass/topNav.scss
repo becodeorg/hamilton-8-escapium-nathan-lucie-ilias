@@ -1,12 +1,13 @@
 
 #top_nav{
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: flex;
     height: 85px;
     align-items: center;
     justify-content: space-between;
-    background-color: $darkest_background;
+    background-color: $darkest_background2;
+    z-index: 2;
 
 
     #leftTopBar{
@@ -24,20 +25,21 @@
                 a{
                     text-decoration: none;
                     font-size: 18px ;
-                    color : $nav_font_links_desktop;
+                    color : $nav_font_color;
                     font-weight: 700;
                     font-family: $headings;
                 }
             }
-            #container_ligne_red{
+            .containerLigneRed{
                 position: relative;
-                #home {
+                .word_on_red_ligne {
                     z-index: 2;  
                     color : $white_font;
                     font-weight: 800;
                     }             
-                #ligne_red{
+                .ligne_red{
                     position: absolute;
+                    opacity: 0;
                     left:50%;
                     top: 45%;
                     translate: -50%;
@@ -80,7 +82,7 @@
     }
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1320px){
     #top_nav{
         #burger{
             display: block;
@@ -99,12 +101,10 @@
           }
         #nav_links{
             z-index: 99;
-            display: none;
             flex-direction: column;
             position: absolute;
             top: 0;
-            left:  0;
-            width: 0;
+            left:  -200%;
             padding-top: 30px;
             width: 60%;
             min-width: 250px;
@@ -113,8 +113,6 @@
             justify-content: start;
             background-color: $dark_background;
             font-size: 16px ;
-            transform: translateX(-200%);
-            transition: transform 0.5s ease-in-out;
             gap: 0;
             li{
                 margin-left: 50px;
@@ -139,7 +137,7 @@
                 rotate: (90deg);
                 transform: translateX(2px);
             }    
-            #ligne_red{
+            .ligne_red{
                 display: none;
             }    
             .grey_ligne{
@@ -153,8 +151,7 @@
             }      
         }
         #nav_links.active{
-            display: block;
-            transform: none;
+            left:0;
             position: fixed;
         }
     }
@@ -164,9 +161,6 @@
         display:none;
     }
 }
-
-
-
 
 
 
