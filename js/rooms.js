@@ -1,4 +1,6 @@
 /* récupération données rooms.json */
+
+
 fetch("../json/rooms.json")
     .then(response => response.json())
     .then(json => {
@@ -110,6 +112,26 @@ for(let input of tris){
         }
         input.checked = true;
     });
+}
+
+
+/****************  test insert footer nav ********************/
+import {nav} from "./topNav.js";
+
+addNav();
+async function addNav() {
+    const resp = await fetch("topNav.html");
+    const html = await resp.text();
+    document.body.insertAdjacentHTML("afterbegin", html);
+
+    nav();
+}
+
+addFooter();
+async function addFooter() {
+    const resp = await fetch("footer.html");
+    const html = await resp.text();
+    document.body.insertAdjacentHTML("beforeend", html);
 }
 
 
