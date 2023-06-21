@@ -13,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="aboutbody">
     <header>
 
     </header>
-    <main>
+    <main class="aboutmain">
         <section class="premiere">
             <h1>about<span>.</span></h1>
             <div>
@@ -62,28 +62,49 @@
             </ul></div>
         </section>
         <section class="fourth">
-            <h2>Our team</h2>
-            <ul>
-                <li>
-                    <img src="/images/gallery/member-photo-1.jpg" alt="">
-                    <h3>Stanley Hudson</h3>
-                    <p>Co-Creator</p>
-                </li>
-                <li>
-                    <img src="/images/gallery/member-photo-2.jpg" alt="">
-                    <h3>Mona Sterlling</h3>
-                    <p>Co-Creator</p>
-                </li>
-                <li>
-                    <img src="/images/gallery/member-photo-3.jpg" alt="">
-                    <h3>Trudy Campbell</h3>
-                    <p>Co-Creator</p>
-                </li>
+            <h2>Our Team</h2>
+            <div><ul>
+                <li class="member"><img src="/images/gallery/member-photo-1.jpg" alt=""></li>
+                <li><h3>Stanley Hudson</h3></li>
+                <li><p>Co-Creator</p></li>
             </ul>
+            <ul>
+                <li class="member"><img src="/images/gallery/member-photo-2.jpg" alt=""></li>
+                <li><h3>Mona Sterlling</h3></li>
+                <li><p>Co-Creator</p></li>
+            </ul>
+            <ul>
+                <li class="member"><img src="/images/gallery/member-photo-3.jpg" alt=""></li>
+                <li><h3>Trudy Campbell</h3></li>
+                <li><p>Co-Creator</p></li>
+            </ul></div>
         </section>
         <section class="fifth">
-            <h2>What people say</h2>
-            <a href="">Road All Testiomials</a>
+            <div class="fifthh"><h2>What people say</h2></div>
+            <div class="fiftha"><a href="">Road All Testiomials</a></div>
+            <div class="bloc3">
+                <div class="item">
+                    <p>"This place is a blast, especially for groups! I loved seeing how group members of different personalities approached the puzzles."</p>
+                    <div class="carimg"><img src="/images/avatars/comment-avatar-1.png" alt=""></div>
+                    <p class="name">TIFFANY</p>
+                </div>
+                <div class="item">
+                    <p>"My familly and I had a spectacular experience here and they are above and beyond in customer service and entertainment."</p>
+                    <div class="carimg"><img src="/images/avatars/comment-avatar-2.png" alt=""></div>
+                    <P class="name">AARON</P>
+                </div>
+                <div class="item">
+                    <p>"This place is a blast, especially for groups! I loved seeing how group members of different personalities approached the puzzles."</p>
+                    <div class="carimg"><img src="/images/avatars/comment-avatar-1.png" alt=""></div>
+                    <p class="name">TIFFANY</p>
+                </div>
+                <div class="item">
+                    <p>"My familly and I had a spectacular experience here and they are above and beyond in customer service and entertainment."</p>
+                    <div class="carimg"><img src="/images/avatars/comment-avatar-2.png" alt=""></div>
+                    <P class="name">AARON</P>
+                </div>
+            </div>
+            <span class="carouspan"></span>
         </section>
         <section class="sixth">
             <h2>FAQs</h2>
@@ -154,5 +175,6 @@
 }
 includeHTML()
     </script>
+    <script src="/js/carousel.js" type="module"></script>
 </body>
 </html>

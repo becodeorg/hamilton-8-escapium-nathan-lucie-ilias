@@ -25,4 +25,8 @@ $smallerTextMobile2 : 10px;
 //Red color ? 
 $red: #F60B0E;
 
-
+%centre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
