@@ -503,8 +503,40 @@
 @media only screen and (max-width:600px) {
     .header_blogs{
         background-size: 300%;
-        background-position: center top;
-        height: 400px;
+        background-position-y: -5%;
+        background-position-x: center;
+        height: 300px;
+        .container_header{
+            .text_container_header{
+                height: 60px;
+                .title_blogs{
+                    margin-top: 30px;
+                    justify-content: center;
+                    align-items: bottom;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    position: relative;
+                    h1{
+                        font-size: 25px;
+                        letter-spacing: -1px;
+                    }
+                    .circle_blogs{
+                        height: 5px;
+                        width: 5px;
+                        bottom: 22px;
+                        right: 33px;
+                    }
+                    .links_container_header{
+                        a{
+                            font-size: 12px;
+   
+                        }
+                    }    
+                }
+            }
+        }
+    
     }
     .main_blogs{
         display: flex;
