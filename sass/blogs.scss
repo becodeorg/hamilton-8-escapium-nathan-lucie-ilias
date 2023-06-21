@@ -256,6 +256,7 @@
             align-items: center;
             padding-bottom: 80px;
             width: 400px;
+            background-size: 100%;
             .date{
                 font-size: 12px;
                 opacity: 0.6;
@@ -264,6 +265,7 @@
         }
         .kidnapped{
             background-image: url(../images/gallery/room-3.jpg); 
+
         }
         .what_is{
             background-image: url(../images/gallery/slide-2.jpg); 
@@ -326,6 +328,51 @@
                 height: 105px;
                 width: 105px;
                 background-size: cover;
+                position: relative;
+                overflow: hidden;
+                &:hover{
+                    .span_one{
+                            left:0;
+                            transition: 1s;
+                    }
+                    .span_two{
+                        top:50%;
+                        transition: 1s;
+                    }
+                    .span_three{
+                        right:0;
+                        transition: 1s;
+                    }
+                    .span_four{
+                        bottom:50%;
+                        transition: 1s;
+                    }
+                }
+            .rotating-span {
+                display: block;
+                width: 100%;
+                height: 5px;
+                position: absolute;
+                background-color: $red;
+            }
+            .span_one{
+                top:0;
+                left: 100%;
+            }
+            .span_two{
+                top: -55%;
+                right: -48%;
+                rotate: (90deg);
+            }
+            .span_three{
+                bottom: 0%;
+                right:100%;
+            }
+            .span_four{
+                bottom: -55%;
+                left: -48%;
+                rotate: (90deg);
+            }
             }
             .one_shots{
                 background-image: url(/images/gallery/gallery-7.jpg);
@@ -357,7 +404,6 @@
         height: 450px;
         .container_header{
             .text_container_header{
-
                 .title_blogs{
                     justify-content: center;
                     align-items: center;
@@ -753,3 +799,25 @@
         color : $global_font_color;
     }
 }
+
+@keyframes span_one{
+    100%{
+        left:0;
+    }
+}
+@keyframes span_two{
+    100%{
+        top: 50%
+    }
+}
+@keyframes span_three{
+    100%{
+        right: 0;
+    }
+}
+@keyframes span_four{
+    100%{
+        bottom : 0%;
+    }
+}
+
