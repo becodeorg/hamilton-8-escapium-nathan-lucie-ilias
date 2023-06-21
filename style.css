@@ -172,7 +172,15 @@ main .third div {
     display: block;
   }
   main .second .uldiv ul {
-    width: 80%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  main .second .uldiv ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   main .second .video {
     height: 25vh;
