@@ -19,7 +19,27 @@ function createRooms(json) {
 
         contener.style.backgroundPosition = 'center';
         contener.style.backgroundSize = 'cover';
-        contener.className = 'room_card';
+        contener.className = 'room_card' + ' all ';  // 2 = easy , 3 = normal , 4 = hard.
+
+        switch (room['difficulty']){
+            case 1:
+                contener.className += 'easy';
+                break;
+            case 2:
+                contener.className += 'easy';
+                break;
+            case 3:
+                contener.className += 'normal';
+                break;
+            case 4:
+                contener.className += 'hard';
+                break;
+            case 5:
+                contener.className += 'hard';
+                break;
+
+        }
+
 
         // creation difficulty
         let difficulty = document.createElement('div');
@@ -73,3 +93,24 @@ function createRooms(json) {
 
     }
 }
+
+
+
+/****************** TRIS ***********************/
+
+
+let tris = document.getElementsByTagName("input");
+
+for(let input of tris){
+    input.addEventListener('change', e=>{
+        for(let checkbox of tris){
+            if(checkbox.checked){
+                checkbox.checked = false;
+            }
+        }
+        input.checked = true;
+    });
+}
+
+
+

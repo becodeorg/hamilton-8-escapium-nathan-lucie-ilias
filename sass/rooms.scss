@@ -49,7 +49,15 @@
   #rooms_Tris{
     display: flex;
     justify-content: center;
-    a{
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    #all-box + label div,
+    #easy-box + label div,
+    #normal-box + label div,
+    #hard-box + label div {
       color: $white_background;
       border: 2px #3C3F3E solid;
       padding: 10px 35px 10px 35px;
@@ -61,6 +69,33 @@
         cursor: pointer;
       }
     }
+
+    #all-box:checked + label div,
+    #easy-box:checked + label div,
+    #normal-box:checked + label div,
+    #hard-box:checked + label div {
+      background-color: blue;
+      border: 2px red solid;
+      &:hover{
+        background-color: red;
+      }
+    }
+
+    //#all-box ~ .room_card:has(.all),
+    //#easy-box ~ .room_card:has(.easy),
+    //#normal-box ~ .room_card:has(.normal),
+    //#hard-box ~ .room_card:has(.hard)
+    //{
+    //  display: none;
+    //}
+    //
+    //#all-box:checked ~ .room_card:has(.all),
+    //#easy-box:checked ~ .room_card:has(.easy),
+    //#normal-box:checked ~ .room_card:has(.normal),
+    //#hard-box:checked ~ .room_card:has(.hard)
+    //{
+    //  display: initial;
+    //}
 
   }
 
