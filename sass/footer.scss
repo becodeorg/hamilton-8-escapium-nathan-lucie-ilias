@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 15%, rgba(0, 0, 0, 0.8) 100%), url(/images/gallery/room-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    ol{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+            list-style: none;
+            margin: 2.5%;
+            height: 300px;
+            color: aliceblue;
+            li{
+                padding: 10px;
+                color: $Global_font_color;
+                font-size: 13px;
+                font-family: $paragraphs;
+                h3{
+                    color: white;
+                    font-size: 25px;
+                    font-family: $headings;
+                }
+                .closed{
+                    width: 85px;
+                    text-align: left;
+                }
+            }
+            .social{
+                line-height: 200%;
+                width: 120px;
+            }
+            .workinghours{
+                display: flex;
+                justify-content: space-between;
+            }
+            div{
+                justify-content: left;
+                margin-left: -7.5%;
+                p{
+                    padding-right: 2.5%;
+                    color: $Global_font_color;
+                }
+                span{
+                    margin: 0;
+                    background-color: red;
+                    width: 25px;
+                    height: 2px;
+                }
+            }
+        }
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+    }
+    .footer-logo{
+        padding-top: 5%;
+    }
+    p{
+        color: white;
+        font-size: $smallerTextDesktop;
+    }
+}
+
+
+@media screen and (max-width: 412px) {
+    footer{
+        ol{
+            display: block;
+            .socialul{
+                margin-top: 90px;
+                height: 200px;
+            }
+            .linksul{
+                margin-top: -65px;
+                margin-bottom: 30px;
+            }
+            .hoursul{
+                width: 250px;
+            }
+            ul{
+                .social{
+                    width: 200px;
+                }
+                div{
+                    justify-content: left;
+                    margin-left: -1%;
+                    p{
+                        padding-right: 2.5%;
+                    }
+                    span{
+                        margin: 0;
+                        background-color: red;
+                        width: 25px;
+                        height: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
