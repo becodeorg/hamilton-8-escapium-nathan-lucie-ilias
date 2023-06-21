@@ -12,7 +12,7 @@ for (let link of links){
         linkcolorbase.style.color = '#777';
     }
     link.style.color = 'white';
-    for (lignered of links){
+    for (let lignered of links){
         lignered.nextElementSibling.style.opacity = '0'
     }
     link.nextElementSibling.style.opacity = '1'
