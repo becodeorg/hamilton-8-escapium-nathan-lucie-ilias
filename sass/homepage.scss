@@ -562,6 +562,9 @@ main{
             }
         }
     }
+    .who_can_play{
+        height: 80vh;
+    }
     .photo_shots_homepage{
         background-color: $darkest_background;
         display: flex;
@@ -714,7 +717,7 @@ main{
     }
     .maping{
         width: 100%;
-        height: 800px;
+        height: 900px;
         display: flex;
         .map{
             width: 50%;
@@ -745,9 +748,12 @@ main{
             .text_get_touch{
                 color: $white-font;
                 opacity: 0.5;
-                h3{
-                    margin: 15px 0;
+                input{
                     font-weight: 500;
+                    height: 50px;
+                    font-size: 20px;
+                    background-color: $dark_background;
+                    border: none;
                 }
                 span{
                     display: block;
@@ -760,9 +766,12 @@ main{
             .text_get_touch_last{
                 color: $white-font;
                 opacity: 0.5;
-                h3{
-                    margin: 15px 0;
+                textarea{
+                    margin-top: 15px;
                     font-weight: 500;
+                    font-size: 20px;
+                    background-color: $dark_background;
+                    border: none;
                 }
                 span{
                     display: block;
