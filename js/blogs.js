@@ -1,4 +1,3 @@
-/****************  test insert footer nav ********************/
 import {nav} from "./topNav.js";
 
 addNav();
