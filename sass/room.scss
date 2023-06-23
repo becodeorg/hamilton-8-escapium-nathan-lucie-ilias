@@ -145,23 +145,208 @@
       margin-top: 250px;
       background-color: $dark_background;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      hr{
+        margin-top: 150px;
+        width: 50px;
+        text-align: center;
+        height: 3px;
+      }
       h2{
         text-align: center;
         margin-top: 50px;
+        font-size: 55px;
+        color: white;
+        margin-bottom: 1000px; /* Placeholder calendar */
       }
     }
 
-    #room_other{
-      margin-bottom: 100px;
+    #room_other {
+      width: 100%;
+      margin-top: 100px;
+      margin-bottom: 75px;
+      h2{
+        margin-left: 10%;
+        font-size: $h3Desktop;
+        color: white;
+      }
+      .space-between{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        #other_carousel{
+          margin-right: 10%;
+          a{
+            i{
+              border: 1px solid #969696;
+              padding: 10px 15px 10px 15px;
+              border-radius: 50px;
+              color: white;
+              &:hover{
+                background-color: #969696;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      #other_rooms {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2%;
+        margin: 0 10% 100px 10%;
+        .room_card {
+          align-self: center;
+          justify-self: center;
+          height: 450px;
+          width: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 35px;
+          box-shadow: 0 0 1em black;
+          &:hover {
+            background-size: 250% !important;
+            cursor: pointer;
+          }
+
+          .room_card_difficulty {
+            margin-top: 70%;
+            margin-bottom: 15px;
+
+            i {
+              color: #3C3F3E;
+              margin: 2.5px;
+              text-shadow: #1B1B1B 1px 1px;
+            }
+          }
+
+          .room_card_name {
+
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+
+          }
+
+          .room_card_infos {
+            display: flex;
+
+            div {
+              display: flex;
+
+              i {
+                margin-right: 11px;
+                position: relative;
+                top: 4px;
+              }
+
+              p {
+                margin-right: 15px;
+                color: #3C3F3E;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+      }
+
+
     }
-
-
-
   }
 
   hr{
     border-color: $global_font_color;
     background-color: $global_font_color;
+  }
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+  #room_body{
+    #room_main{
+      #room_infos {
+        padding-bottom: 150px;
+        #room_datas {
+          width: 500px;
+        }
+        #room_description {
+          width: 700px;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1225px) {
+
+
+  #room_body{
+    #room_main{
+      #room_infos {
+        font-size: 12px;
+        #room_datas {
+          margin-bottom: 25px;
+          width: 400px;
+          margin-left: 50px;
+          #datas_difficulty {
+            div {
+              font-size: 20px;
+              i {
+                margin-right: 5px;
+              }
+            }
+          }
+
+          #datas_players {
+            div{
+              font-size: 20px;
+            }
+          }
+
+          #datas_time {
+            div{
+              margin-bottom: 20px;
+              font-size: 20px;
+            }
+          }
+        }
+
+        #room_description {
+          position: absolute;
+          width: 500px;
+        }
+
+        #room_contact {
+          width: 230px;
+          left: 75px;
+          div{
+            width: 100%;
+            font-size: 15px;
+            span{
+              margin-left: 15px;
+            }
+            &:nth-child(7){
+              span {
+                font-size: 11px;
+              }
+            }
+          }
+          a{
+            margin-top: 25px;
+            padding: 10px 8px 10px 8px;
+            width: 90px;
+          }
+
+        }
+      }
+    }
   }
 
 }
