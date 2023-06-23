@@ -562,6 +562,156 @@ main{
             }
         }
     }
+    .photo_shots_homepage{
+        background-color: $darkest_background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .span_grey{
+            margin: 75px 0 50px 0 ;
+            display: inline-block;
+            height: 4px;
+            width: 35px;
+            background-color: $white-background;
+            opacity: 0.1;
+        }
+        h2{
+            color: $white-font;
+            font-size : 50px;
+            margin-bottom: 35px;
+        }
+        a{
+            margin-top: 45px;
+            color: $red;            
+            opacity: 0.5;
+            font-family: $headings;
+            font-weight: 700;       
+            text-decoration: none;  
+        }
+        .container_underline{
+            overflow: hidden;
+            &:hover{
+                .underline{
+                    animation : translate_x 1.5s ease-in-out alternate infinite;
+                }
+            }
+            .underline{
+                border-top: solid 2px $red;
+                margin-top: 3px;
+                margin-bottom: 85px;
+                opacity: 0.5;
+                width: 100px;
+                display: block;
+                height: 5px;
+                cursor: pointer;
+
+                @keyframes translate_x{
+                    0%{
+                        transform: translateX(-80%);
+                    }
+                    100%{
+                        transform: translateX(80%)
+                    }
+                }
+            } 
+        }
+        .container_photo_shots_homepage{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            .photo_shots_homepage{
+                width: 300px;
+                height: 300px;
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+                &:hover{
+                    .span_one{
+                            left:0;
+                            transition: 1s;
+                    }
+                    .span_two{
+                        top:50%;
+                        transition: 1s;
+                    }
+                    .span_three{
+                        right:0;
+                        transition: 1s;
+                    }
+                    .span_four{
+                        bottom:50%;
+                        transition: 1s;
+                    }
+                }
+            .rotating-span {
+                display: block;
+                width: 100%;
+                height: 8px;
+                position: absolute;
+                background-color: $red;
+            }
+            .span_one{
+                top:0;
+                left: 100%;
+            }
+            .span_two{
+                top: -55%;
+                right: -50%;
+                rotate: (90deg);
+            }
+            .span_three{
+                bottom: 0%;
+                right:100%;
+            }
+            .span_four{
+                bottom: -55%;
+                left: -50%;
+                rotate: (90deg);
+            }
+            }
+            .shots_one{
+                background-image: url(../images/gallery/member-photo-2.jpg);
+            }
+            .shots_two{
+                background-image: url(../images/gallery/gallery-6.jpg);
+            }
+            .shots_three{
+                background-image: url(../images/gallery/gallery-2.jpg);
+            }
+            .shots_four{
+                background-image: url(../images/gallery/gallery-1.jpg);
+            }
+            .shots_five{
+                background-image: url(../images/gallery/gallery-8.jpg);
+            }
+            .shots_six{
+                background-image: url(../images/gallery/gallery-4.jpg);
+            }
+            .shots_seven{
+                background-image: url(../images/gallery/gallery-5.jpg);
+            }
+            .shots_height{
+                background-image: url(../images/gallery/gallery-3.jpg);
+            }
+        }
+        .btn_follow_our_feed{
+            padding: 20px 40px;
+            text-decoration: none;  
+            border: solid 2px rgb(49, 49, 49);
+            color: $white-font;
+            font-weight: 800;
+            font-size: 15px;
+            border-radius: 30px;
+            font-family: $headings;
+            margin-bottom: 125px;
+        }
+    }
     .maping{
         width: 100%;
         height: 800px;
