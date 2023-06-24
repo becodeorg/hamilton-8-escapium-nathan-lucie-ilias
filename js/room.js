@@ -3,6 +3,7 @@
 /****************  get name *******************************/
 const postName = (new URLSearchParams(window.location.search)).get('name');
 
+//set title
 document.getElementsByTagName('h1')[0].innerText = postName;
 
 let roomDatas;
@@ -15,6 +16,15 @@ let jsonFile;
 setDynamic();
 
 
+/* 1 seul élément dans le carrousel si sreen width <= 650px */
+addEventListener("resize", (event) => {
+    if(window.innerWidth <= 650){
+        createOtherRooms(posInitCarrousel,1);
+    }else{
+        createOtherRooms(posInitCarrousel, 3);
+    }
+});
+
 function setDynamic() {
     fetch("../json/rooms.json")
         .then(response => response.json())
@@ -25,7 +35,12 @@ function setDynamic() {
                     jsonSize = json.length;
                     jsonFile = json;
                     createDataRoom();
-                    createOtherRooms(posInitCarrousel,jsonSize);
+                    if(window.innerWidth <= 650){
+                        createOtherRooms(posInitCarrousel,1);
+
+                    }else {
+                        createOtherRooms(posInitCarrousel, 3);
+                    }
                 }
             }
 
@@ -33,6 +48,7 @@ function setDynamic() {
 }
 
 /**************** creation datas room *******************/
+
 function createDataRoom() {
     header.style.backgroundImage = 'linear-gradient(to bottom, rgb(27 27 27 / 0%), rgb(27 27 27)),url("' + roomDatas['photos'][0] + '")';
 
@@ -80,12 +96,14 @@ function createDataRoom() {
     datas_time.prepend(timeDiv);
 }
 
+
+
 /**************** creation other rooms *******************/
 
-function createOtherRooms(i) {
+function createOtherRooms(i,nbrRoom) {
     let other_rooms = document.getElementById('other_rooms');
         other_rooms.innerHTML = '';
-    const MAX_ROOM = i + 3;
+    const MAX_ROOM = i + nbrRoom;
 
     for(i; i<jsonFile.length;i++) { // pour chaque room du .json
 
@@ -183,19 +201,35 @@ let previous = document.getElementById('other_previous');
 let next = document.getElementById('other_next');
 
 previous.addEventListener('click', ()=>{
-    if(posInitCarrousel > 0){
-        posInitCarrousel -= 1;
-        createOtherRooms(posInitCarrousel);
 
-    }
+    if(window.innerWidth <= 650){
+            if(posInitCarrousel > 0) {
+                posInitCarrousel -= 1;
+                createOtherRooms(posInitCarrousel, 1);
+            }
+
+        }else {
+            if(posInitCarrousel > 0) {
+                posInitCarrousel -= 1;
+                createOtherRooms(posInitCarrousel, 3);
+            }
+        }
 
 });
 
 next.addEventListener('click', ()=>{
-    if(posInitCarrousel < jsonSize -3) {
-        posInitCarrousel += 1;
-        createOtherRooms(posInitCarrousel);
-    }
+
+        if(window.innerWidth <= 650){
+            if(posInitCarrousel < jsonSize-1) {
+                posInitCarrousel += 1;
+                createOtherRooms(posInitCarrousel, 1);
+            }
+        }else {
+            if(posInitCarrousel < jsonSize -3) {
+                posInitCarrousel += 1;
+                createOtherRooms(posInitCarrousel, 3);
+            }
+        }
 
 });
 
