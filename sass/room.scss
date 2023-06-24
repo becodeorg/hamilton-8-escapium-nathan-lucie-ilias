@@ -444,7 +444,25 @@
     #room_datas {
       width: 300px !important;
       margin-left: 0 !important;
+    }
+  }
 
+  #other_rooms{
+    display: flex  !important;
+    justify-content: center;
+    align-items: center;
+    a{
+      width: 93% !important;
+      height: 80vw !important;
+      .room_card_difficulty{
+        font-size: 5vw !important;
+      }
+      .room_card_name{
+        font-size: 5vw !important;
+      }
+      .room_card_infos{
+        font-size: 5vw !important;
+      }
     }
   }
 
