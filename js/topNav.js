@@ -11,7 +11,7 @@ function nav() {
     for (let link of links) {
         link.addEventListener('click', () => {
             for (let linkcolorbase of links) {
-                linkcolorbase.style.color = '#CBCBCB';
+                linkcolorbase.style.color = '#777';
             }
             link.style.color = 'white';
             for (let lignered of links) {

@@ -1,112 +1,140 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
 footer{
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 15%, rgba(0, 0, 0, 0.8) 100%), url(/images/gallery/room-7.jpg);
-    background-repeat: no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)) ,url(../images/gallery/room-7.jpg);
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    ol{
-        width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 90px;;
+    color: $white_font;
+    h3{
+        font-family: $headings;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+    li{
+        opacity: 0.4;
+        font-family: $headings;
+    }
+    section{
+        p{
+            color: $white_font;
+            display: flex;
+            align-items: center;
+            font-family: $headings;
+            opacity: 0.5;
+            font-weight: 500;
+            margin: 20px 0;
+            &:after{
+                content : '';
+                display: block;
+                height: 2px;
+                width: 30px;
+                background-color: $red;
+                margin-left: 10px;
+            }
+        }
+    }
+    .footer_top{
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
-        ul{
-            list-style: none;
-            margin: 2.5%;
-            height: 300px;
-            color: aliceblue;
+        width: 100%;
+        gap: 10%; 
+        padding-bottom: 100px;
+        .address{
+            ul{
+                line-height: 25px;
+                font-size: 14px;
+                li{
+                    &:nth-child(3){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .linksul{
             li{
-                padding: 10px;
-                color: $global_font_color;
-                font-size: 13px;
-                font-family: $paragraphs;
-                h3{
-                    color: white;
-                    font-size: 25px;
-                    font-family: $headings;
-                }
-                .closed{
-                    width: 85px;
-                    text-align: left;
+                margin-bottom: 30px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+        }
+        .hoursul{
+            ul{
+                line-height: 40px;
+                li{
+                    font-size: 14px;
+                    font-weight: 500;
+                    width: 210px;
+                    display: flex;
+                    justify-content: space-between;
                 }
             }
+        }
+        .social_section{
             .social{
-                line-height: 200%;
-                width: 120px;
-            }
-            .workinghours{
                 display: flex;
-                justify-content: space-between;
-            }
-            div{
-                justify-content: left;
-                margin-left: -7.5%;
-                p{
-                    padding-right: 2.5%;
-                    color: $global_font_color;
-                }
-                span{
-                    margin: 0;
-                    background-color: red;
-                    width: 25px;
-                    height: 2px;
+                flex-wrap:wrap;
+                width: 200px;
+                i{
+                    margin: 5px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $dark_background;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    cursor: pointer;
+                    &:hover{
+                        animation: bg 1s ease;
+                        background-color: $red;
+                    }
+                    @keyframes bg{
+                        0%{
+                            background-color: white;
+                        }
+                        100%{
+                            background-color: $red;
+                        }
+                    }
                 }
             }
         }
     }
-    div{
+    .footer_bottom{
+        border-top: solid 1px rgba(128, 128, 128, 0.363);
+        background-color: rgba(0, 0, 0, 0.753);
         display: flex;
+        flex-direction: column;
+        justify-content: bottom;
         align-items: center;
-        justify-content: center;
-        padding: 1%;
-    }
-    .footer-logo{
-        padding-top: 5%;
-    }
-    p{
-        color: white;
-        font-size: $smallerTextDesktop;
+        padding-top: 30px;
+        div{
+            padding: 20px 0 40px 0;
+            font-family: $headings;
+            opacity: 0.5;
+            text-align: center;
+        }
     }
 }
-
-
-@media screen and (max-width: 412px) {
+@media only screen and (max-width: 412px){
     footer{
-        ol{
-            display: block;
-            .socialul{
-                margin-top: 90px;
-                height: 200px;
-            }
-            .linksul{
-                margin-top: -65px;
-                margin-bottom: 30px;
-            }
-            .hoursul{
-                width: 250px;
-            }
-            ul{
-                .social{
-                    width: 200px;
-                }
-                div{
-                    justify-content: left;
-                    margin-left: -1%;
-                    p{
-                        padding-right: 2.5%;
-                    }
-                    span{
-                        margin: 0;
-                        background-color: red;
-                        width: 25px;
-                        height: 2px;
-                    }
-                }
+        .footer_top{
+        gap: 0;
+        padding-left: 0;
+        section{
+            width: 85%;
+        }
+        .social{
+            width: 90%;
+        }
+        }
+        .footer_bottom{
+            div{
+                font-size: 12px ;
             }
         }
     }
