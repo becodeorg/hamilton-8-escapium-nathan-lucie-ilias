@@ -120,6 +120,7 @@
       box-shadow: 0 0 1em black;
       &:hover{
         background-size: 250% !important;
+        cursor: pointer;
       }
 
       .room_card_difficulty{
@@ -199,6 +200,11 @@
 
   }
 
+  #rooms_nav{
+    margin-top: 150px;
+    margin-bottom: 60px !important;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -269,10 +275,16 @@
     #rooms_Tris{
       flex-direction: column;
       align-items: center;
-      a{
+      label{
         text-align: center;
         width: 50%;
         margin: 40px 0 0 0;
+      }
+      #all-box + label div,
+      #easy-box + label div,
+      #normal-box + label div,
+      #hard-box + label div {
+        margin: 15px 10px 15px 10px;
       }
     }
   }
@@ -309,6 +321,10 @@
 
     }
 
+  }
+
+  #rooms_nav{
+    margin-top: 50px;
   }
 
 

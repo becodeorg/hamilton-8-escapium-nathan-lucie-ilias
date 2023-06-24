@@ -16,9 +16,10 @@ function createRooms(json) {
         // console.log(room['name']);
 
         // creation contener
-        let contener = document.createElement('div');
+        let contener = document.createElement('a');
         contener.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),url("' + room["photos"][0] +'")';
-
+        contener.href = "../pages/room.html?name=" + room['name'];
+        contener.style.textDecoration = 'none';
         contener.style.backgroundPosition = 'center';
         contener.style.backgroundSize = 'cover';
         contener.className = 'room_card' + ' all ';  // 2 = easy , 3 = normal , 4 = hard.
@@ -60,11 +61,13 @@ function createRooms(json) {
         let name = document.createElement('p');
         name.className = 'room_card_name';
         name.innerText = room['name'];
+        name.style.color = 'white';
         contener.append(name);
 
         //creation infos
         let infos = document.createElement('div');
         infos.className = "room_card_infos";
+        infos.style.color = 'white';
 
         let groupDiv = document.createElement('div');
         let groupIcon = document.createElement('i');
@@ -115,7 +118,7 @@ for(let input of tris){
 }
 
 
-/****************  test insert footer nav ********************/
+/****************  insert footer nav ********************/
 import {nav} from "./topNav.js";
 
 addNav();
@@ -123,6 +126,7 @@ async function addNav() {
     const resp = await fetch("topNav.html");
     const html = await resp.text();
     document.body.insertAdjacentHTML("afterbegin", html);
+    //document.getElementsByTagName('header')[0].insertAdjacentHTML("afterbegin", html);
 
     nav();
 }
