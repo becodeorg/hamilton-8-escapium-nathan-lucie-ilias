@@ -87,6 +87,19 @@ footer{
                     justify-content: center;
                     border-radius: 50%;
                     font-size: 20px;
+                    cursor: pointer;
+                    &:hover{
+                        animation: bg 1s ease;
+                        background-color: $red;
+                    }
+                    @keyframes bg{
+                        0%{
+                            background-color: white;
+                        }
+                        100%{
+                            background-color: $red;
+                        }
+                    }
                 }
             }
         }
@@ -101,6 +114,9 @@ footer{
         padding-top: 30px;
         div{
             padding: 20px 0 40px 0;
+            font-family: $headings;
+            opacity: 0.5;
+            text-align: center;
         }
     }
 }
@@ -111,6 +127,9 @@ footer{
         padding-left: 0;
         section{
             width: 85%;
+        }
+        .social{
+            width: 90%;
         }
         }
         .footer_bottom{
