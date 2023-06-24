@@ -206,112 +206,111 @@ main .third div {
     padding: 10px 0 10px 0;
   }
 }
-* {
-  padding: 0;
-  margin: 0;
-}
-
 footer {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.8) 100%), url(/images/gallery/room-7.jpg);
-  background-repeat: no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)), url(../images/gallery/room-7.jpg);
   background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  color: #fefefe;
 }
-footer ol {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+footer h3 {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 20px;
 }
-footer ol ul {
-  list-style: none;
-  margin: 2.5%;
-  height: 300px;
-  color: aliceblue;
-}
-footer ol ul li {
-  padding: 10px;
-  color: #717171;
-  font-size: 13px;
-  font-family: "Hind", sans-serif;
-}
-footer ol ul li h3 {
-  color: white;
-  font-size: 25px;
+footer li {
+  opacity: 0.4;
   font-family: "Montserrat", sans-serif;
 }
-footer ol ul li .closed {
-  width: 85px;
-  text-align: left;
+footer section p {
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.5;
+  font-weight: 500;
+  margin: 20px 0;
 }
-footer ol ul .social {
-  line-height: 200%;
-  width: 120px;
+footer section p:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #F60B0E;
+  margin-left: 10px;
 }
-footer ol ul .workinghours {
+footer .footer_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 10%;
+  padding-bottom: 100px;
+}
+footer .footer_top .address ul {
+  line-height: 25px;
+  font-size: 14px;
+}
+footer .footer_top .address ul li:nth-child(3) {
+  margin-bottom: 20px;
+}
+footer .footer_top .linksul li {
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer .footer_top .hoursul ul {
+  line-height: 40px;
+}
+footer .footer_top .hoursul ul li {
+  font-size: 14px;
+  font-weight: 500;
+  width: 210px;
   display: flex;
   justify-content: space-between;
 }
-footer ol ul div {
-  justify-content: left;
-  margin-left: -7.5%;
+footer .footer_top .social_section .social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
 }
-footer ol ul div p {
-  padding-right: 2.5%;
-  color: #717171;
-}
-footer ol ul div span {
-  margin: 0;
-  background-color: red;
-  width: 25px;
-  height: 2px;
-}
-footer div {
+footer .footer_top .social_section .social i {
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #222222;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1%;
+  border-radius: 50%;
+  font-size: 20px;
 }
-footer .footer-logo {
-  padding-top: 5%;
+footer .footer_bottom {
+  border-top: solid 1px rgba(128, 128, 128, 0.363);
+  background-color: rgba(0, 0, 0, 0.753);
+  display: flex;
+  flex-direction: column;
+  justify-content: bottom;
+  align-items: center;
+  padding-top: 30px;
 }
-footer p {
-  color: white;
-  font-size: 11px;
+footer .footer_bottom div {
+  padding: 20px 0 40px 0;
 }
 
-@media screen and (max-width: 412px) {
-  footer ol {
-    display: block;
+@media only screen and (max-width: 412px) {
+  footer .footer_top {
+    gap: 0;
+    padding-left: 0;
   }
-  footer ol .socialul {
-    margin-top: 90px;
-    height: 200px;
+  footer .footer_top section {
+    width: 85%;
   }
-  footer ol .linksul {
-    margin-top: -65px;
-    margin-bottom: 30px;
-  }
-  footer ol .hoursul {
-    width: 250px;
-  }
-  footer ol ul .social {
-    width: 200px;
-  }
-  footer ol ul div {
-    justify-content: left;
-    margin-left: -1%;
-  }
-  footer ol ul div p {
-    padding-right: 2.5%;
-  }
-  footer ol ul div span {
-    margin: 0;
-    background-color: red;
-    width: 25px;
-    height: 2px;
+  footer .footer_bottom div {
+    font-size: 12px;
   }
 }
 * {
@@ -2025,7 +2024,62 @@ main .latest_blog_homepage .container_latest_blog_homepage .cards .contenu_cards
   width: 95%;
 }
 main .who_can_play {
-  height: 80vh;
+  background-color: #222222;
+  display: flex;
+  padding-bottom: 150px;
+  padding-top: 75px;
+  padding-left: 20%;
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+  filter: brightness(90%);
+}
+main .who_can_play h2 {
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  rotate: -90deg;
+  color: #fefefe;
+  opacity: 0.5;
+  letter-spacing: 6px;
+  font-weight: 800;
+  font-size: 18px;
+}
+main .who_can_play h2:before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 150px;
+  background-color: #fefefe;
+  margin-right: 10px;
+}
+main .who_can_play ul {
+  line-height: 75px;
+}
+main .who_can_play ul li {
+  color: #fefefe;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+main .who_can_play ul li i {
+  color: #F60B0E;
+  padding: 33px;
+  font-size: 40px;
+}
+main .who_can_play .exit_who_can_play {
+  width: 50%;
+  height: 400px;
+  background: linear-gradient(to right, #222222 10%, rgba(0, 0, 0, 0)), url(../images/gallery/room-7.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position-y: -90px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 main .photo_shots_homepage {
   background-color: #1B1B1B;
