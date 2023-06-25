@@ -3,6 +3,7 @@
     background-image: url(/images/gallery/slide-1.jpg);
     background-position-y: 18%;
     background-size: cover;
+    width: 100%;
     .container_header_blog_single{
         width: 100%;
         height: 100%;
@@ -43,11 +44,13 @@
     }
 
 .main_blog_single{
+    overflow: hidden;
     background-color: $darkest_background; 
     display: grid;
     grid-template-columns: 66% 35%;
     grid-template-rows: repeat(auto);
     padding: 10% 0%;
+    width: 100%;
     .columns1{
         position: relative;
         .cards{
@@ -245,11 +248,13 @@
                     margin-bottom: 55px;
                     opacity: 0.5;
                 }
-                .text_get_touch{
+                .text_leave_comment{
                     color: $white-font;
                     opacity: 0.5;
                     display: flex;
                     .input_span{
+                        display: flex;
+                        flex-direction: column!important;
                         input{
                             font-weight: 500;
                             height: 25px;
@@ -268,7 +273,7 @@
                     }
                     
                 }
-                .text_get_touch_last{
+                .text_leave_comment_last{
                     color: $white-font;
                     opacity: 0.5;
                     textarea{
@@ -561,14 +566,6 @@
                         justify-content: space-between;
                         position: relative;
                         padding: 70px 40px 40px 60px;
-                        .name{
-                            h3{
-                                color: $white_font;
-                            }
-                            p{
-                                color: $global_font_color;
-                            }
-                        }
                         img{
                             position: absolute;
                             left: 0;
@@ -651,11 +648,11 @@
                     }
                     .kelly,
                     .emmy{
-                        margin-left: 70px;
+                        margin-left: 0px;
                     }
                     .emmy{
-                        padding-left: 35px;
-                        border-left: solid 3px $red;
+                        padding-left: 0px;
+                        border-left: none;
                     }
                 }     
                 .leave_comments_blog{
@@ -676,10 +673,8 @@
                         margin-bottom: 55px;
                         opacity: 0.5;
                     }
-                    .text_get_touch{
-                        color: $white-font;
-                        opacity: 0.5;
-                        display: flex;
+                    .text_leave_comment{
+                        flex-direction: column;
                         .input_span{
                             input{
                                 font-weight: 500;
@@ -687,11 +682,11 @@
                                 font-size: 16px;
                                 background-color: $dark_background;
                                 border: none;
-                                width: 370px;
+                                width: 200px;
                             }
                             span{
                                 display: block;
-                                width: 95%;
+                                width: 200px;
                                 height: 1px;
                                 background-color: $white-background;
                                 margin-top: 15px;
@@ -699,7 +694,7 @@
                         }
                         
                     }
-                    .text_get_touch_last{
+                    .text_leave_comment_last{
                         color: $white-font;
                         opacity: 0.5;
                         textarea{
@@ -715,19 +710,14 @@
                             width: 100%;
                             height: 1px;
                             background-color: $white-background;
-                            margin-top: 95px;
+                            margin-top: 40px;
                             margin-bottom:70px;
                         }
                     }
                         a{
-                        padding: 20px 40px;
-                        text-decoration: none;  
-                        border: solid 2px rgb(49, 49, 49);
-                        color: $white-font;
-                        font-weight: 800;
-                        font-size: 15px;
+                        padding: 10px 20px;
+                        font-size: 14px;
                         border-radius: 30px;
-                        font-family: $headings;
                     }  
                 }
             } 
@@ -735,6 +725,7 @@
     }
     
     .columns2{
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -788,23 +779,15 @@
             flex-direction: column;
             flex-wrap: wrap;
             .btn_blogs{
-                color : $white_background;
-                text-decoration: none;
-                padding: 7px 20px;
-                border: solid 2.5px $global_font_color;
-                opacity: 0.8;
-                border-radius: 30px;
-                font-weight: 800;
-                font-size: 11px;
-                letter-spacing: -0.5px;
-                font-family: $headings;
-                margin-left: 10px;
+                padding: 7px 10px;
+                font-size: 8px;
+                margin-left: 5px;
                 line-height: 40px;
             }
         }
         .photo_shots_blogs{
             .container_photos_all{
-                width: 250px;
+                width: 80%!important;
                 display: flex;
                 gap: 5px;
                 .container_photo_shots{
@@ -821,17 +804,30 @@
         background-size: 300%;
         background-position-y: -5%;
         background-position-x: center;
-        height: 300px;
+        min-height: 80vh!important;
+        width: 100%!important;
         .container_header_blog_single{
             .text_container_header_blog_single{
                     h1{
-                        font-size: 25px;
+                        font-size: 20px;
                         letter-spacing: -1px;
+                    }
+                    .links_cards_blog_single{
+                        a{
+                            font-size: 10px;
+                        }
                     }
                 }      
             } 
     }
     .main_blog_single{
+        h2, h3{
+            font-size: 15px!important;
+            font-family: $headings;
+        }
+        p{
+            font-size: 12px!important;
+        }
         display: flex;
         flex-direction: column;
         padding: 10% 0%;
@@ -841,10 +837,13 @@
                 width: 80%;
                 padding-left: 2%;
                 margin-bottom: 10%;
+                .image_cards_montre{
+                    width: 80%;
+                }
                 .contenu_cards{
                     padding: 10%;
                     position: initial;
-                    width: 100%;
+                    width: 80%;
                     z-index: 1;
                     h2{
                         font-size: 25px;
@@ -852,6 +851,64 @@
                     p{
                         font-size: 10px;
                     }
+                    a{
+                        font-size: 8px!important;
+                        margin-bottom: 30px;
+                        padding: 5px 20px!important;
+                    }
+                }
+            }
+        }
+        .bottom_blog{
+            .emmy_howard{
+                width: 70%!important;
+                .name_emmy{
+                    display: flex;
+                    justify-content: space-between;
+                    position: initial;
+                    padding: 20px!important;
+                    img{
+                        margin-left: 10px;
+                        position: initial!important;
+                        transform: none;
+                        border-radius: 50%;
+                        width: 40px!important;
+                    }
+                    .icon_emmy_howard{
+                       i{
+                            font-size: 12px;
+                            width: 20px;
+                            height: 20px;
+                            &:nth-child(2){
+                                display: none;
+                            }
+                        }
+                    }     
+                }
+                p{
+                    display: none;
+                }  
+            }
+            .person_comment{
+                p{
+                    margin: 20px 0;
+                    width: 70%!important;
+                }
+                .name_person{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 60px;
+                    img{
+                        width: 30px!important;
+                        border-radius: 50%;
+                        margin-right: 15px;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                }
+                .reply{
+                    font-size : 8px!important;
                 }
             }
         }
@@ -869,7 +926,6 @@
 
         }
         .relative{
-
             width: 95%;
             ul{
                 line-height: 40px;
@@ -924,11 +980,13 @@
             .container_photos_all{
                 width: 100%;
                 display: flex;
+                flex-wrap: wrap;
+                height: auto;
                 justify-content: center;
                 gap: 5px;
                 .container_photo_shots{
-                    height: 120px;
-                    width: 30%;
+                    height: 150px;
+                    width: 150px;
                 }
             }   
         }
