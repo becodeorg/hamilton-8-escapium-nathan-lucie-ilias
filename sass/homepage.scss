@@ -12,7 +12,7 @@
         position: relative;
         background: linear-gradient((45deg), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.295));
         &:hover{
-            h2{
+            h1{
                 animation: translate_opacity 1s ease;
             }
             a{
@@ -118,7 +118,8 @@
 /* Fin du header */
 
 /* featured */
-main{
+.main_homepage{
+    overflow: hidden;
     h2,h3,h1,h4{
         font-family: $headings;
     }
@@ -441,6 +442,7 @@ main{
             color: $white-font;
             font-size : 50px;
             margin-bottom: 35px;
+            text-align: center;
         }
         a{
             margin-top: 45px;
@@ -778,11 +780,13 @@ main{
         }
     }
     .maping{
+        background-color: $dark_background;
         width: 100%;
-        height: 900px;
+        min-height: 900px;
         display: flex;
         .map{
             width: 50%;
+            min-height: 900px!important;
             overflow: hidden;
             iframe{
                 filter: saturate(0%) brightness(50%) contrast(100%);
@@ -791,8 +795,6 @@ main{
             }
         }
         .get_touch{
-            background-color: $dark_background;
-            width: 50%;
             padding: 70px;
             .span_grey{
                 margin-bottom: 55px;
@@ -863,6 +865,7 @@ main{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
         &:hover{
             h2,
             p,
@@ -883,10 +886,10 @@ main{
         }
         h2{
             color: $darkest_background;
-            font-size : 50px;
+            font-size : 40px;
             margin-bottom: 35px;
             opacity: 0.8;
-            padding: 20px;
+            padding: 20px 0;
         }
         p{
             font-family: $paragraphs;
@@ -914,6 +917,66 @@ main{
 }
 
 @media only screen and (max-width: 1201px){
+    .maping{
+        min-height: 900px;
+        flex-direction: column;
+    }
+    .map{
+        width: 100%!important;
+        height: 400px!important;
+    }
+    .get_touch{
+        padding: 50px!important;
+        width: 100%!important;
+        .span_grey{
+            margin-bottom: 55px;
+            display: inline-block;
+            height: 4px;
+            width: 35px;
+            background-color: $white-background;
+            opacity: 0.1;
+        }
+        h2{
+            color: $white-font;
+            font-size : 30px!important;
+            margin-bottom: 40px;
+        }
+        .text_get_touch{
+            input{
+                height: 40px;
+                font-size: 14px;
+                width: 80%;
+            }
+            span{
+                margin-top: 50px;
+                width: 100%;
+            }
+        }
+        .text_get_touch_last{
+            textarea{
+                font-size: 14px;
+                width: 100px;
+            }
+            span{
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: $white-background;
+                margin-top: 95px;
+                margin-bottom:70px;
+            }
+        }
+        a{
+            padding: 20px 40px;
+            text-decoration: none;  
+            border: solid 2px rgb(49, 49, 49);
+            color: $white-font;
+            font-weight: 800;
+            font-size: 15px;
+            border-radius: 30px;
+            font-family: $headings;
+        }
+    }
     .header_homepage{
         min-height: 100vh;
         width:100%;
@@ -943,7 +1006,7 @@ main{
         }
     }
     
-    main{
+    .main_homepage{
         .featured_rooms{
             display: flex;
             flex-direction: column;
@@ -1164,69 +1227,47 @@ main{
                 }
             }
         }
-    }
-        .maping{
-            width: 100%;
-            height: auto;
-            flex-direction: column;
+    }  
+}
+}     
 
-            .get_touch{
-                height: auto;
-                padding: 50px;
-                h2{
-                    font-size : 40px;
-                    margin-bottom: 70px;
-                }
-                .text_get_touch{
-                    h3{
-                        margin: 15px 0;
-                    }
-                    span{
-                        width: 70%;
-                        margin-top: 50px;
-                    }
-                }
-                .text_get_touch_last{
-                    h3{
-                        margin: 15px 0;
-                    }
-                    span{
-                        width: 70%;
-                        margin-top: 95px;
-                        margin-bottom:70px;
-                    }
-                }
-                a{
-                    padding: 20px 40px;
-                    font-size: 15px;
-                }
-            }
-        }
-        .ready{
-            width: 90%;
-            }
-            .span_grey{
-                margin: 80px 0 55px 0 ;
-            }
-            h2{
-                font-size : 20px !important;
-                margin-bottom: 25px;
-                text-align: center;      
-            }
-            p{
-                font-weight: 600;
-                font-size: 17px;
-            }
-            a{
-                margin: 55px 0 125px 0;
-                padding: 25px 45px;
-                font-size: 15px;
-            }
-        }
-    }
 }
 
 @media only screen and (max-width: 950px){
+    .header_homepage{
+        min-height: 100vh;
+        width:100%;
+        overflow: hidden;
+        .carousel_accordion {
+            .text_slide{
+                z-index: 1;
+                margin-left : 10%;
+                h2{
+                    margin-bottom: 50px!important;
+                }
+                a{
+                    font-size: 10px!important;
+                    &::before{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+        .span_slide_container{
+            top: 20%;
+            right: 40px;
+            height: 100px;
+            width: 60px;
+            span{
+                margin-bottom: 15px;
+                height: 3px;
+                width: 40%;
+            }
+        }
+    }
+    h2{
+        font-size: 25px!important;
+    }
     .who_can_play{
         background: linear-gradient(to right, $dark_background, rgba(0, 0, 0, 0)), url(../images/gallery/room-7.jpg);
         background-size: cover;
@@ -1234,7 +1275,7 @@ main{
         padding-bottom:80px;
         display: block;
         padding-top: 50px;
-        padding-left: 0;
+        padding-left: 10px!important;
         min-height: 250px;
         position: relative;  
         filter: brightness(100%);
@@ -1251,13 +1292,13 @@ main{
                 font-family: $headings;
                 font-weight: 700;
                 letter-spacing: 2px;
-                font-size: 14px;
+                font-size: 14px!important;
                 display: flex;
                 align-items: left;
                 i{
                     color: $red;
                     padding: 33px;
-                    font-size: 20px;
+                    font-size: 14px!important;
                 }
             }
         }
@@ -1265,9 +1306,26 @@ main{
             display: none;
         }
     }
+    .ready{
+        padding:0;
+        .span_grey{
+            margin: 125px 0 55px 0 ;
+        }
+        h2{
+            margin-bottom: 35px;
+            padding: 20px;
+        }
+        p{
+            font-size: 17px;
+            padding: 20px;
+        }
+        a{
+            margin: 55px 0 125px 0;
+            padding: 15px 20px;
+            font-size: 10px;
+        }
+    }
 }
-
-
 @keyframes translateX{
     0%{
         transform : translateX(100%);
