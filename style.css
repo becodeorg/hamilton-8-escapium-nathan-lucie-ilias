@@ -2432,7 +2432,6 @@ footer .footer_bottom div {
 }
 .header_homepage .carousel_accordion .text_slide {
   z-index: 3;
-  color: #fefefe;
   margin-left: 10%;
   animation: translate_opacity 2s;
   font-family: "Montserrat", sans-serif;
@@ -2894,13 +2893,13 @@ footer .footer_bottom div {
   background: linear-gradient(to top, #1B1B1B, rgba(255, 255, 255, 0) 70%);
 }
 .main_homepage .latest_blog_homepage .container_latest_blog_homepage .cards .montre {
-  background-image: url(images/gallery/room-9.jpg);
+  background-image: url("images/gallery/room-9.jpg");
 }
 .main_homepage .latest_blog_homepage .container_latest_blog_homepage .cards .room {
-  background-image: url(images/gallery/post-img-2.jpg);
+  background-image: url("images/gallery/post-img-2.jpg");
 }
 .main_homepage .latest_blog_homepage .container_latest_blog_homepage .cards .exit {
-  background-image: url(images/gallery/room-7.jpg);
+  background-image: url("images/gallery/room-7.jpg");
 }
 .main_homepage .latest_blog_homepage .container_latest_blog_homepage .cards .contenu_cards_latest {
   height: auto;
@@ -3010,7 +3009,7 @@ footer .footer_bottom div {
 .main_homepage .who_can_play .exit_who_can_play {
   width: 50%;
   height: 400px;
-  background: linear-gradient(to right, #222222 10%, rgba(0, 0, 0, 0)), url(../images/gallery/room-7.jpg);
+  background: linear-gradient(to right, #222222 10%, rgba(0, 0, 0, 0)), url("images/gallery/room-7.jpg");
   background-size: 130%;
   background-repeat: no-repeat;
   background-position-y: -90px;
@@ -3141,52 +3140,52 @@ footer .footer_bottom div {
   rotate: 90deg;
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_one {
-  background-image: url(../images/gallery/member-photo-2.jpg);
+  background-image: url("images/gallery/member-photo-2.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_one:hover {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/member-photo-2.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("images/gallery/member-photo-2.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_two {
-  background-image: url(../images/gallery/gallery-6.jpg);
+  background-image: url("images/gallery/gallery-6.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_two:hover {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-6.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("images/gallery/gallery-6.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_three {
-  background-image: url(../images/gallery/gallery-2.jpg);
+  background-image: url("images/gallery/gallery-2.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_three:hover {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-2.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("images/gallery/gallery-2.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_four {
-  background-image: url(../images/gallery/gallery-1.jpg);
+  background-image: url("images/gallery/gallery-1.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_four:hover {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-1.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("images/gallery/gallery-1.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_five {
-  background-image: url(../images/gallery/gallery-8.jpg);
+  background-image: url("images/gallery/gallery-8.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_five:hover {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-8.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("images/gallery/gallery-8.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_six {
-  background-image: url(../images/gallery/gallery-4.jpg);
+  background-image: url("images/gallery/gallery-4.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_six:hover {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-4.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("images/gallery/gallery-4.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_seven {
-  background-image: url(../images/gallery/gallery-5.jpg);
+  background-image: url("images/gallery/gallery-5.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_seven:hover {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-5.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("images/gallery/gallery-5.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_height {
-  background-image: url(../images/gallery/gallery-3.jpg);
+  background-image: url("images/gallery/gallery-3.jpg");
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_height:hover {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-3.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("images/gallery/gallery-3.jpg");
 }
 .main_homepage .photo_shots_homepage .btn_follow_our_feed {
   padding: 20px 40px;
@@ -3674,7 +3673,7 @@ footer .footer_bottom div {
     font-size: 25px !important;
   }
   .who_can_play {
-    background: linear-gradient(to right, #222222, rgba(0, 0, 0, 0)), url(../images/gallery/room-7.jpg);
+    background: linear-gradient(to right, #222222, rgba(0, 0, 0, 0)), url("images/gallery/room-7.jpg");
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
