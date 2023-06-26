@@ -355,6 +355,39 @@ main .sixth ul li span h3 {
   font-family: "Montserrat", sans-serif;
   margin-left: 20px;
 }
+main .sixth ul li span div {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+main .sixth ul li span div .span_accordeon {
+  height: 2px;
+  width: 100%;
+  display: block;
+  background-color: #222222;
+  rotate: 90deg;
+}
+main .sixth ul li span div:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  display: block;
+  background-color: #222222;
+}
+main .sixth ul li p {
+  display: none;
+}
+main .sixth ul p.accordeon {
+  display: block;
+}
+main .sixth ul .span_accordeon.display {
+  display: none;
+}
 
 @media screen and (max-width: 1000px) {
   .carousel_fifth {

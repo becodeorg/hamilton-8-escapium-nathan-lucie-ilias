@@ -357,10 +357,45 @@ main{
                         font-family: $headings;
                         margin-left: 20px;
                     }
+                div{
+                    height: 20px;
+                    width: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+                    .span_accordeon{
+                        height: 2px;
+                        width: 100%;
+                        display: block;
+                        background-color: $dark_background;
+                        rotate: (90deg);
+                    }
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 100%;
+                        display: block;
+                        background-color: $dark_background;
+                    }
                 }
+
+                }
+                p{
+                    display: none;
+                }
+            }
+            p.accordeon{
+                display: block;
+            }
+            .span_accordeon.display{
+                display: none;
             }
         }
     }
+
 }
 
 @media screen and (max-width:1000px){
