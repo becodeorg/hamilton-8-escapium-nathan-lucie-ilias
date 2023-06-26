@@ -236,7 +236,7 @@ next.addEventListener('click', ()=>{
 
 /****************  insert footer nav ********************/
 
-import {nav} from "js/topNav.js";
+import {nav} from "./topNav.js";
 
 addNav();
 async function addNav() {
