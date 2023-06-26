@@ -716,6 +716,7 @@
                 position: relative;
                 overflow: hidden;
                 &:hover{
+                    filter: brightness(60%);
                     .span_one{
                             left:0;
                             transition: 1s;
