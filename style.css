@@ -7,7 +7,7 @@
 }
 
 main .premiere {
-  background-image: url("images/gallery/slide-1.jpg");
+  background-image: url("../images/gallery/slide-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -382,6 +382,10 @@ main .sixth ul li span h3 {
   opacity: 0.7;
   font-size: 18px;
 }
+main .sixth ul li span h3:hover {
+  color: #F60B0E;
+  transition: 0.3s ease;
+}
 main .sixth ul li span div {
   height: 20px;
   width: 20px;
@@ -422,6 +426,7 @@ main .sixth ul li p {
 }
 main .sixth ul p.accordeon {
   display: block;
+  animation: translate_opacity 1s;
 }
 main .sixth ul .span_accordeon.display {
   display: none;
