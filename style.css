@@ -2154,10 +2154,7 @@ footer .footer_bottom div {
   margin-top: 50px;
   font-size: 55px;
   color: white;
-  margin-bottom: 50px; /* Placeholder calendar */
-}
-#room_body #room_main #room_booking img {
-  margin-bottom: 50px;
+  margin-bottom: 1000px; /* Placeholder calendar */
 }
 #room_body #room_main #room_other {
   width: 100%;
@@ -3071,6 +3068,9 @@ footer .footer_bottom div {
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .photo_shots_homepage:hover {
+  filter: brightness(60%);
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .photo_shots_homepage:hover .span_one {
   left: 0;
