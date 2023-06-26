@@ -26,7 +26,7 @@ addEventListener("resize", (event) => {
 });
 
 function setDynamic() {
-    fetch("../json/rooms.json")
+    fetch("json/rooms.json")
         .then(response => response.json())
         .then(json => {
             for (let room of json) { // pour chaque room du .json
@@ -111,7 +111,7 @@ function createOtherRooms(i,nbrRoom) {
             // creation contener
             let contener = document.createElement('a');
             contener.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),url("' + jsonFile[i]["photos"][0] + '")';
-            contener.href = "../pages/room.html?name=" + jsonFile[i]['name'];
+            contener.href = "pages/room.html?name=" + jsonFile[i]['name'];
             contener.style.textDecoration = 'none';
             contener.style.backgroundPosition = 'center';
             contener.style.backgroundSize = 'cover';
@@ -236,7 +236,7 @@ next.addEventListener('click', ()=>{
 
 /****************  insert footer nav ********************/
 
-import {nav} from "./topNav.js";
+import {nav} from "js/topNav.js";
 
 addNav();
 async function addNav() {

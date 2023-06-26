@@ -1,4 +1,4 @@
-import {nav} from "/js/topNav.js";
+import {nav} from "js/topNav.js";
 
 addNav();
 async function addNav() {
