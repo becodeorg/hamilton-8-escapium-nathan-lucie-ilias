@@ -111,7 +111,7 @@ function createOtherRooms(i,nbrRoom) {
             // creation contener
             let contener = document.createElement('a');
             contener.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),url("' + jsonFile[i]["photos"][0] + '")';
-            contener.href = "pages/room.html?name=" + jsonFile[i]['name'];
+            contener.href = "../pages/room.html?name=" + jsonFile[i]['name'];
             contener.style.textDecoration = 'none';
             contener.style.backgroundPosition = 'center';
             contener.style.backgroundSize = 'cover';

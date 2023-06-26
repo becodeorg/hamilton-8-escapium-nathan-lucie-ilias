@@ -2418,7 +2418,7 @@ footer .footer_bottom div {
   position: relative;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.295));
 }
-.header_homepage .carousel_accordion:hover h1 {
+.header_homepage .carousel_accordion:hover h2 {
   animation: translate_opacity 1s ease;
 }
 .header_homepage .carousel_accordion:hover a {
@@ -2441,10 +2441,12 @@ footer .footer_bottom div {
   animation: translate_opacity 2s;
   font-family: "Montserrat", sans-serif;
   color: #fefefe;
+  z-index: 1 !important;
 }
 .header_homepage .carousel_accordion .text_slide h2 {
   font-size: 120px;
   margin-bottom: 95px;
+  z-index: 1 !important;
 }
 .header_homepage .carousel_accordion .text_slide a {
   display: flex;
