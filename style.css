@@ -11,7 +11,7 @@ main .premiere {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 50vh;
+  min-height: 50vh;
 }
 main .premiere h1 {
   padding-top: 10%;
@@ -326,7 +326,7 @@ main .sixth {
 }
 main .sixth h2 {
   padding-top: 2%;
-  padding-bottom: 3%;
+  padding-bottom: 20px;
   font-size: 44px;
   font-family: "Montserrat", sans-serif;
   color: #222222;
@@ -337,16 +337,20 @@ main .sixth .vide {
   background-color: #717171;
   opacity: 0.6;
 }
-main .sixth p {
+main .sixth .p_one {
   color: #717171;
   font-family: "Hind", sans-serif;
   opacity: 0.5;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 1px;
+  padding-bottom: 40px;
 }
 main .sixth ul {
   width: 30%;
+}
+main .sixth ul li {
+  margin-bottom: 40px;
 }
 main .sixth ul li span {
   display: flex;
@@ -354,19 +358,25 @@ main .sixth ul li span {
 main .sixth ul li span h3 {
   font-family: "Montserrat", sans-serif;
   margin-left: 20px;
+  opacity: 0.7;
+  font-size: 18px;
 }
 main .sixth ul li span div {
   height: 20px;
   width: 20px;
+  border-radius: 50%;
+  background-color: rgb(223, 223, 223);
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   cursor: pointer;
+  opacity: 0.4;
 }
 main .sixth ul li span div .span_accordeon {
-  height: 2px;
-  width: 100%;
+  height: 1px;
+  width: 90%;
   display: block;
   background-color: #222222;
   rotate: 90deg;
@@ -374,13 +384,20 @@ main .sixth ul li span div .span_accordeon {
 main .sixth ul li span div:before {
   content: "";
   position: absolute;
-  height: 2px;
-  width: 100%;
+  height: 1px;
+  width: 60%;
   display: block;
   background-color: #222222;
 }
 main .sixth ul li p {
   display: none;
+  margin-left: 60px;
+  margin-top: 20px;
+  color: #717171;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }
 main .sixth ul p.accordeon {
   display: block;
@@ -432,10 +449,32 @@ main .sixth ul .span_accordeon.display {
     font-size: 40px;
     padding: 20px 0;
   }
+  .sixth {
+    padding: 3%;
+  }
+  .sixth h2 {
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: 44px;
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+  }
+  .sixth p {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .sixth ul {
+    width: 90% !important;
+  }
+  .sixth ul li span h3 {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 20px;
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 412px) {
   main .premiere {
-    height: 20vh;
+    max-height: 20vh;
   }
   main .premiere h1 {
     font-size: 32px;
@@ -463,8 +502,11 @@ main .sixth ul .span_accordeon.display {
     justify-content: center;
     text-align: center;
   }
+  main .second .uldiv ul li h3 {
+    font-size: 15px;
+  }
   main .second .video {
-    height: 25vh;
+    max-height: 25vh;
   }
   main .third div {
     display: flex;
@@ -479,6 +521,58 @@ main .sixth ul .span_accordeon.display {
     width: 100%;
     margin: 0;
     padding: 10px 0 10px 0;
+  }
+  main .fourth {
+    background-color: #222222;
+    padding: 3%;
+    text-align: center;
+  }
+  main .fourth h2 {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-size: 44px;
+  }
+  main .fourth ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+  main .fourth ul li img {
+    width: 200px;
+  }
+  main .fourth ul li h3 {
+    margin: 40px 0 15px 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #fefefe;
+    font-size: 30px;
+  }
+  main .fourth ul li p {
+    color: #717171;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-family: "Hind", sans-serif;
+  }
+  .sixth {
+    padding: 3%;
+    text-align: center;
+  }
+  .sixth h2 {
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: 44px;
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+  }
+  .sixth p {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .sixth ul {
+    width: 90% !important;
+  }
+  .sixth ul li span h3 {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 20px;
   }
 }
 footer {
