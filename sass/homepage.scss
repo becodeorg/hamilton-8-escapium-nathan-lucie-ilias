@@ -715,8 +715,18 @@
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+                div{
+                    display: none;
+                    color: $white_font;
+                    column-gap: 10px;
+                    font-family: $headings;
+                    font-weight: 700;
+                }
                 &:hover{
-                    filter: brightness(60%);
+                    div{
+                        display: flex;
+                    }
+                    filter: brightness(70%);
                     .span_one{
                             left:0;
                             transition: 1s;
