@@ -1449,11 +1449,13 @@ footer .footer_bottom div {
   animation: red_circle_translate 1s;
 }
 .columns2 .popular_blogs div {
+  cursor: pointer;
   display: flex;
   align-items: center;
   padding-bottom: 80px;
   width: 400px;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 .columns2 .popular_blogs div .date {
   font-size: 12px;
@@ -1461,10 +1463,22 @@ footer .footer_bottom div {
   font-weight: 500;
 }
 .columns2 .popular_blogs .kidnapped {
-  background-image: url(../images/gallery/room-3.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/room-3.jpg);
+}
+.columns2 .popular_blogs .kidnapped:hover {
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/room-3.jpg);
 }
 .columns2 .popular_blogs .what_is {
-  background-image: url(../images/gallery/slide-2.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/slide-2.jpg);
+}
+.columns2 .popular_blogs .what_is:hover {
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/slide-2.jpg);
+}
+.columns2 .popular_blogs .perfect {
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/room-3.jpg);
+}
+.columns2 .popular_blogs .perfect:hover {
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/room-3.jpg);
 }
 .columns2 .popular_blogs h3 {
   font-size: 15px;
@@ -3709,6 +3723,9 @@ footer .footer_bottom div {
   font-size: 18px;
   color: #fefefe;
 }
+.header_blog_single .container_header_blog_single .text_container_header_blog_single .links_cards_blog_single:hover {
+  animation: font_transition_color 1.5s ease-in-out;
+}
 
 .main_blog_single {
   overflow: hidden;
@@ -4012,11 +4029,13 @@ footer .footer_bottom div {
   animation: red_circle_translate 1s;
 }
 .columns2 .popular_blogs div {
+  cursor: pointer;
   display: flex;
   align-items: center;
   padding-bottom: 80px;
   width: 400px;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 .columns2 .popular_blogs div .date {
   font-size: 12px;
@@ -4024,10 +4043,22 @@ footer .footer_bottom div {
   font-weight: 500;
 }
 .columns2 .popular_blogs .kidnapped {
-  background-image: url(../images/gallery/room-3.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/room-3.jpg);
+}
+.columns2 .popular_blogs .kidnapped:hover {
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/room-3.jpg);
 }
 .columns2 .popular_blogs .what_is {
-  background-image: url(../images/gallery/slide-2.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/slide-2.jpg);
+}
+.columns2 .popular_blogs .what_is:hover {
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/slide-2.jpg);
+}
+.columns2 .popular_blogs .perfect {
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/room-3.jpg);
+}
+.columns2 .popular_blogs .perfect:hover {
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/room-3.jpg);
 }
 .columns2 .popular_blogs h3 {
   font-size: 15px;
@@ -4088,6 +4119,9 @@ footer .footer_bottom div {
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+.columns2 .photo_shots_blogs .container_photos_all .container_photo_shots:hover {
+  filter: brightness(60%);
 }
 .columns2 .photo_shots_blogs .container_photos_all .container_photo_shots:hover .span_one {
   left: 0;
@@ -4150,24 +4184,24 @@ footer .footer_bottom div {
 }
 
 @media only screen and (max-width: 1600px) {
-  .header_blogs {
+  .header_blog_single {
     background-size: 200%;
     background-position-y: 5%;
     background-position-x: center;
     height: 450px;
   }
-  .header_blogs .container_header_blog_single .text_container_header_blog_single h1 {
+  .header_blog_single .container_header_blog_single .text_container_header_blog_single h1 {
     color: #fefefe;
     font-family: "Montserrat", sans-serif;
-    font-size: 70px;
+    font-size: 30px !important;
     letter-spacing: -1px;
     text-align: center;
   }
-  .header_blogs .container_header_blog_single .text_container_header_blog_single .links_cards_blog_single a {
+  .header_blog_single .container_header_blog_single .text_container_header_blog_single .links_cards_blog_single a {
     font-size: 14px;
     letter-spacing: -0.3px;
   }
-  .header_blogs .container_header_blog_single .text_container_header_blog_single .links_cards_blog_single a i {
+  .header_blog_single .container_header_blog_single .text_container_header_blog_single .links_cards_blog_single a i {
     font-size: 18px;
   }
   .main_blog_single {
@@ -4460,14 +4494,20 @@ footer .footer_bottom div {
   .main_blog_single p {
     font-size: 12px !important;
   }
+  .main_blog_single .columns1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main_blog_single .columns1 .cards {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 80%;
     padding-left: 2%;
     margin-bottom: 10%;
   }
   .main_blog_single .columns1 .cards .image_cards_montre {
-    width: 80%;
+    width: 100%;
   }
   .main_blog_single .columns1 .cards .contenu_cards {
     padding: 10%;
@@ -4487,7 +4527,7 @@ footer .footer_bottom div {
     padding: 5px 20px !important;
   }
   .main_blog_single .bottom_blog .emmy_howard {
-    width: 70% !important;
+    width: 90% !important;
   }
   .main_blog_single .bottom_blog .emmy_howard .name_emmy {
     display: flex;

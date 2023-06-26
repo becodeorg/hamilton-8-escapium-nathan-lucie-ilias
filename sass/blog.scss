@@ -38,6 +38,9 @@
                             color: $white_font;
                         }
                     }
+                    &:hover{
+                        animation: font_transition_color 1.5s ease-in-out;
+                    }
                 }
             }          
         }
@@ -351,11 +354,13 @@
     }
     .popular_blogs{
         div{
+            cursor: pointer;
             display: flex;
             align-items: center;
             padding-bottom: 80px;
             width: 400px;
-            background-size: 100%;
+            background-size: cover;
+            background-position: center center;
             .date{
                 font-size: 12px;
                 opacity: 0.6;
@@ -363,11 +368,25 @@
             }
         }
         .kidnapped{
-            background-image: url(../images/gallery/room-3.jpg); 
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1),url(../images/gallery/room-3.jpg); 
+            &:hover{
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/room-3.jpg);
 
+            }
         }
         .what_is{
-            background-image: url(../images/gallery/slide-2.jpg); 
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1),url(../images/gallery/slide-2.jpg); 
+            &:hover{
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/slide-2.jpg);
+
+            }
+        }
+        .perfect{
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1), url(../images/gallery/room-3.jpg); 
+            &:hover{
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/room-3.jpg);
+
+            }
         }
         h3{
             font-size: 15px;
@@ -430,6 +449,7 @@
                 position: relative;
                 overflow: hidden;
                 &:hover{
+                    filter: brightness(60%);
                     .span_one{
                             left:0;
                             transition: 1s;
@@ -496,7 +516,7 @@
 }
 
 @media only screen and (max-width:1600px) {
-    .header_blogs{
+    .header_blog_single{
         background-size: 200%;
         background-position-y: 5%;
         background-position-x: center;
@@ -506,7 +526,7 @@
                 h1{
                     color : $white_font;
                     font-family: $headings;
-                    font-size: 70px;
+                    font-size: 30px!important;
                     letter-spacing: -1px;
                     text-align: center;
                 }
@@ -832,13 +852,17 @@
         flex-direction: column;
         padding: 10% 0%;
         .columns1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .cards{
-                display: block;
+                display: flex;
+                flex-direction: column;
                 width: 80%;
                 padding-left: 2%;
                 margin-bottom: 10%;
                 .image_cards_montre{
-                    width: 80%;
+                    width: 100%;
                 }
                 .contenu_cards{
                     padding: 10%;
@@ -861,7 +885,7 @@
         }
         .bottom_blog{
             .emmy_howard{
-                width: 70%!important;
+                width: 90%!important;
                 .name_emmy{
                     display: flex;
                     justify-content: space-between;

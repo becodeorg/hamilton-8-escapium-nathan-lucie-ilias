@@ -252,11 +252,13 @@
     }
     .popular_blogs{
         div{
+            cursor: pointer;
             display: flex;
             align-items: center;
             padding-bottom: 80px;
             width: 400px;
-            background-size: 100%;
+            background-size: cover;
+            background-position: center center;
             .date{
                 font-size: 12px;
                 opacity: 0.6;
@@ -264,11 +266,25 @@
             }
         }
         .kidnapped{
-            background-image: url(../images/gallery/room-3.jpg); 
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1),url(../images/gallery/room-3.jpg); 
+            &:hover{
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/room-3.jpg);
 
+            }
         }
         .what_is{
-            background-image: url(../images/gallery/slide-2.jpg); 
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1),url(../images/gallery/slide-2.jpg); 
+            &:hover{
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/slide-2.jpg);
+
+            }
+        }
+        .perfect{
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1), url(../images/gallery/room-3.jpg); 
+            &:hover{
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/room-3.jpg);
+
+            }
         }
         h3{
             font-size: 15px;
