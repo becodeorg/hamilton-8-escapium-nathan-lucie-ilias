@@ -2,7 +2,7 @@ import {nav} from "/js/topNav.js";
 
 addNav();
 async function addNav() {
-    const resp = await fetch("../pages/topNavIndex.html");
+    const resp = await fetch("pages/topNavIndex.html");
     const html = await resp.text();
     document.body.insertAdjacentHTML("afterbegin", html);
 
@@ -11,7 +11,7 @@ async function addNav() {
 
 addFooter();
 async function addFooter() {
-    const resp = await fetch("../pages/footer.html");
+    const resp = await fetch("pages/footer.html");
     const html = await resp.text();
     document.body.insertAdjacentHTML("beforeend", html);
 }
