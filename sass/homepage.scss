@@ -12,7 +12,7 @@
         position: relative;
         background: linear-gradient((45deg), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.295));
         &:hover{
-            h1{
+            h2{
                 animation: translate_opacity 1s ease;
             }
             a{
@@ -37,9 +37,11 @@
             animation : translate_opacity 2s;
             font-family: $headings;
             color: $white-font;
+            z-index: 1!important;
             h2{
                 font-size: 120px;
                 margin-bottom: 95px;
+                z-index: 1!important;
             }
             a{
                 display: flex;
