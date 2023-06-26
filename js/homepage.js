@@ -15,6 +15,8 @@ async function addFooter() {
     const html = await resp.text();
     document.body.insertAdjacentHTML("beforeend", html);
 }
+
+
 //carousel
 let title = document.querySelector('#title_slide')
 let span1 = document.querySelector('#span_slide1')
