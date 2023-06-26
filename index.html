@@ -456,6 +456,106 @@
 </footer>
 
     <script src="topNav.js" type="module"></script>
-    <script src="homepage.js" type="module"></script>
+<script>
+    //carousel
+    let title = document.querySelector('#title_slide')
+    let span1 = document.querySelector('#span_slide1')
+    let span2 = document.querySelector('#span_slide2')
+    let span3 = document.querySelector('#span_slide3')
+    let span4 = document.querySelector('#span_slide4')
+    let slide1 = document.querySelector('#slide1');
+    let slide2 = document.querySelector('#slide2');
+    let slide3 = document.querySelector('#slide3');
+    let slide4 = document.querySelector('#slide4');
+
+    span1.addEventListener('click', () => {
+        title.innerText = 'You Are \nLocked In!'
+        slide1.style.opacity = 1
+        slide2.style.opacity = 0
+        slide3.style.opacity = 0
+        slide4.style.opacity = 0
+    })
+    span2.addEventListener('click', () => {
+        title.innerText = 'The Clock \nIs Ticking...'
+        slide1.style.opacity = 0
+        slide2.style.opacity = 1
+        slide3.style.opacity = 0
+        slide4.style.opacity = 0
+    })
+    span3.addEventListener('click', () => {
+        title.innerText = 'What is \nEscapium?'
+        slide1.style.opacity = 0
+        slide2.style.opacity = 0
+        slide3.style.opacity = 1
+        slide4.style.opacity = 0
+    })
+
+    span4.addEventListener('click', () => {
+        title.innerText = 'Escape \nin 60 mins?'
+        slide1.style.opacity = 0
+        slide2.style.opacity = 0
+        slide3.style.opacity = 0
+        slide4.style.opacity = 1
+    })
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const carousel = document.querySelector(".carousel_container_testimonials");
+        const left = document.getElementById("arrow_left_testimonials");
+        const right = document.getElementById("arrow_right_testimonials");
+
+        left.addEventListener("click", showPreviousSlideTestimonials);
+        right.addEventListener("click", showNextSlideTestimonials);
+
+        function showPreviousSlideTestimonials() {
+            carousel.scrollBy({
+                left: -carousel.offsetWidth,
+                behavior: "smooth"
+            });
+        }
+        function showNextSlideTestimonials() {
+            carousel.scrollBy({
+                left: carousel.offsetWidth,
+                behavior: "smooth"
+            });
+        }
+    });
+
+    const two_span = document.querySelector('.two_span')
+    const btn_room_nav = document.querySelector(".plus");
+    const list_room_nav = document.querySelector(".accordeon_nav_rooms");
+    const span_none = document.querySelector(".span_none");
+    btn_room_nav.addEventListener("click", () => {
+        list_room_nav.classList.toggle("accordeon_nav");
+        span_none.classList.toggle("display_span_nav");
+    })
+    const btn_blog_nav = document.querySelector(".plus2");
+    const list_blog_nav = document.querySelector(".accordeon_nav_blog");
+    const span_none2 = document.querySelector(".span_none2");
+    btn_blog_nav.addEventListener("click", () => {
+        list_blog_nav.classList.toggle("accordeon_nav2");
+        span_none2.classList.toggle("display_span_nav2");
+    })
+    const burger = document.getElementById('burger');
+    let menu = document.getElementById('nav_links');
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        burger.classList.toggle('active');
+    })
+    let links = document.getElementsByClassName('links_menu');
+
+    for (let link of links) {
+        link.addEventListener('click', () => {
+            for (let linkcolorbase of links) {
+                linkcolorbase.style.color = '#777';
+            }
+            link.style.color = 'white';
+            for (let lignered of links) {
+                lignered.nextElementSibling.style.opacity = '0'
+            }
+            link.nextElementSibling.style.opacity = '1'
+        });
+    }
+
+</script>
 </body>
 </html>
