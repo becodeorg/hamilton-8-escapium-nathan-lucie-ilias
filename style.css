@@ -7,7 +7,7 @@
 }
 
 main .premiere {
-  background-image: url("../images/gallery/slide-1.jpg");
+  background-image: url("images/gallery/slide-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -2436,7 +2436,7 @@ footer .footer_bottom div {
   transition: 0.5s ease-in-out;
 }
 .header_homepage .carousel_accordion .text_slide {
-  z-index: 3;
+  z-index: 1;
   margin-left: 10%;
   animation: translate_opacity 2s;
   font-family: "Montserrat", sans-serif;
