@@ -4,7 +4,7 @@ hamilton-8-escapium-nathan-lucie-ilias created by GitHub Classroom
 Projet escapium dans le cadre de la formation BeCode.
 
 ## Link
-la Page du projet.
+https://becodeorg.github.io/hamilton-8-escapium-nathan-lucie-ilias/
 
 ## Collaborators
 Nathan Lombardelli
