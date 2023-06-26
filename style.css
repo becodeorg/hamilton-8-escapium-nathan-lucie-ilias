@@ -1887,6 +1887,7 @@ footer .footer_bottom div {
     align-items: center;
     padding-bottom: 40px;
     margin-left: 4%;
+    width: 90% !important;
   }
   .columns2 .popular_blogs div .date {
     font-size: 12px;
@@ -1923,10 +1924,16 @@ footer .footer_bottom div {
     margin-left: 10px;
     line-height: 40px;
   }
-  .columns2 .photo_shots_blogs .container_photos_all {
-    width: 100%;
+  .columns2 .photo_shots_blogs {
+    width: 100% !important;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .columns2 .photo_shots_blogs .container_photos_all {
+    width: 100% !important;
+    display: flex;
+    justify-content: center !important;
     gap: 5px;
   }
   .columns2 .photo_shots_blogs .container_photos_all .container_photo_shots {
