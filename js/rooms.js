@@ -119,7 +119,7 @@ for(let input of tris){
 
 
 /****************  insert footer nav ********************/
-import {nav} from "./topNav.js";
+import {nav} from "../js/topNav.js";
 
 addNav();
 async function addNav() {
