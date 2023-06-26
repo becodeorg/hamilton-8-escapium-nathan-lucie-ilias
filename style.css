@@ -2841,6 +2841,24 @@ footer .footer_bottom div {
   height: 250px;
   background-size: cover;
 }
+.main_homepage .latest_blog_homepage .container_latest_blog_homepage .cards .image_cards div {
+  margin-top: 120px;
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+}
+.main_homepage .latest_blog_homepage .container_latest_blog_homepage .cards .image_cards div img {
+  border-radius: 50%;
+  border: solid 3px white;
+  margin-right: 10px;
+}
+.main_homepage .latest_blog_homepage .container_latest_blog_homepage .cards .image_cards div p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fefefe;
+}
 .main_homepage .latest_blog_homepage .container_latest_blog_homepage .cards .image_cards:hover {
   scale: 1.1;
 }
