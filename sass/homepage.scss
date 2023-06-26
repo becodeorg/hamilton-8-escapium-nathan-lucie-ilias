@@ -716,7 +716,8 @@
                 position: relative;
                 overflow: hidden;
                 div{
-                    display: none;
+                    opacity: 0;
+                    display: flex;
                     color: $white_font;
                     column-gap: 10px;
                     font-family: $headings;
@@ -724,9 +725,9 @@
                 }
                 &:hover{
                     div{
-                        display: flex;
+                        opacity: 1;
+                        transition: 0.3s ease-in-out;
                     }
-                    filter: brightness(70%);
                     .span_one{
                             left:0;
                             transition: 1s;
@@ -772,29 +773,54 @@
             }
             .shots_one{
                 background-image: url(../images/gallery/member-photo-2.jpg);
+                &:hover{
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/member-photo-2.jpg);
+                }
             }
             .shots_two{
                 background-image: url(../images/gallery/gallery-6.jpg);
+                &:hover{
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-6.jpg);
+                }
             }
             .shots_three{
                 background-image: url(../images/gallery/gallery-2.jpg);
+                &:hover{
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-2.jpg);
+                }
             }
             .shots_four{
                 background-image: url(../images/gallery/gallery-1.jpg);
+                &:hover{
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-1.jpg);
+                }
             }
             .shots_five{
                 background-image: url(../images/gallery/gallery-8.jpg);
+                &:hover{
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-8.jpg);
+                }
             }
             .shots_six{
                 background-image: url(../images/gallery/gallery-4.jpg);
+                &:hover{
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-4.jpg);
+                }
             }
             .shots_seven{
                 background-image: url(../images/gallery/gallery-5.jpg);
+                &:hover{
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-5.jpg);
+                }
             }
             .shots_height{
                 background-image: url(../images/gallery/gallery-3.jpg);
+                &:hover{
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-3.jpg);
+                }
             }
         }
+    
         .btn_follow_our_feed{
             padding: 20px 40px;
             text-decoration: none;  
@@ -880,11 +906,15 @@
                 padding: 20px 40px;
                 text-decoration: none;  
                 border: solid 2px rgb(49, 49, 49);
+                background-color: $dark_background;
                 color: $white-font;
                 font-weight: 800;
                 font-size: 15px;
                 border-radius: 30px;
                 font-family: $headings;
+                &:hover{
+                    filter: brightness(130%);
+                }
             }
         }
     }

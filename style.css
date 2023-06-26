@@ -7,7 +7,7 @@
 }
 
 main .premiere {
-  background-image: url(/images/gallery/slide-1.jpg);
+  background-image: url("../images/gallery/slide-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -646,11 +646,26 @@ footer .footer_top .address ul {
 footer .footer_top .address ul li:nth-child(3) {
   margin-bottom: 20px;
 }
-footer .footer_top .linksul li {
+footer .footer_top .linksul {
+  width: 175px;
+}
+footer .footer_top .linksul ul li {
   margin-bottom: 30px;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
+}
+footer .footer_top .linksul ul li:hover {
+  list-style-type: disc;
+  color: red;
+  opacity: 1;
+}
+footer .footer_top .linksul ul li a {
+  cursor: pointer;
+}
+footer .footer_top .linksul ul li a:hover {
+  color: white;
+  font-size: 14px;
 }
 footer .footer_top .hoursul ul {
   line-height: 40px;
@@ -3073,17 +3088,16 @@ footer .footer_bottom div {
   overflow: hidden;
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .photo_shots_homepage div {
-  display: none;
+  opacity: 0;
+  display: flex;
   color: #fefefe;
   column-gap: 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
-.main_homepage .photo_shots_homepage .container_photo_shots_homepage .photo_shots_homepage:hover {
-  filter: brightness(70%);
-}
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .photo_shots_homepage:hover div {
-  display: flex;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .photo_shots_homepage:hover .span_one {
   left: 0;
@@ -3129,26 +3143,50 @@ footer .footer_bottom div {
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_one {
   background-image: url(../images/gallery/member-photo-2.jpg);
 }
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_one:hover {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/member-photo-2.jpg);
+}
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_two {
   background-image: url(../images/gallery/gallery-6.jpg);
+}
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_two:hover {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-6.jpg);
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_three {
   background-image: url(../images/gallery/gallery-2.jpg);
 }
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_three:hover {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-2.jpg);
+}
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_four {
   background-image: url(../images/gallery/gallery-1.jpg);
+}
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_four:hover {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-1.jpg);
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_five {
   background-image: url(../images/gallery/gallery-8.jpg);
 }
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_five:hover {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-8.jpg);
+}
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_six {
   background-image: url(../images/gallery/gallery-4.jpg);
+}
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_six:hover {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-4.jpg);
 }
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_seven {
   background-image: url(../images/gallery/gallery-5.jpg);
 }
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_seven:hover {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-5.jpg);
+}
 .main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_height {
   background-image: url(../images/gallery/gallery-3.jpg);
+}
+.main_homepage .photo_shots_homepage .container_photo_shots_homepage .shots_height:hover {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-3.jpg);
 }
 .main_homepage .photo_shots_homepage .btn_follow_our_feed {
   padding: 20px 40px;
@@ -3236,11 +3274,15 @@ footer .footer_bottom div {
   padding: 20px 40px;
   text-decoration: none;
   border: solid 2px rgb(49, 49, 49);
+  background-color: #222222;
   color: #fefefe;
   font-weight: 800;
   font-size: 15px;
   border-radius: 30px;
   font-family: "Montserrat", sans-serif;
+}
+.main_homepage .maping .get_touch a:hover {
+  filter: brightness(130%);
 }
 .main_homepage .ready {
   display: flex;
