@@ -2431,7 +2431,6 @@ footer .footer_bottom div {
   transition: 0.5s ease-in-out;
 }
 .header_homepage .carousel_accordion .text_slide {
-  z-index: 3;
   color: #fefefe;
   margin-left: 10%;
   animation: translate_opacity 2s;
