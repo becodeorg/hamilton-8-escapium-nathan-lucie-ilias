@@ -33,7 +33,6 @@
 
         .text_slide{
             z-index: 3;
-            color: $white-font;
             margin-left : 10%;
             animation : translate_opacity 2s;
             font-family: $headings;
@@ -512,13 +511,13 @@
 
             }
             .montre{
-                background-image: url(images/gallery/room-9.jpg);
+                background-image: url('images/gallery/room-9.jpg');
             }
             .room{
-                background-image: url(images/gallery/post-img-2.jpg);
+                background-image: url('images/gallery/post-img-2.jpg');
             }
             .exit{
-                background-image: url(images/gallery/room-7.jpg);
+                background-image: url('images/gallery/room-7.jpg');
             }
             .contenu_cards_latest{
                 height: auto;
@@ -638,7 +637,7 @@
         .exit_who_can_play{
             width: 50%;
             height: 400px;
-            background: linear-gradient(to right, $dark_background 10%, rgba(0, 0, 0, 0)), url(../images/gallery/room-7.jpg);
+            background: linear-gradient(to right, $dark_background 10%, rgba(0, 0, 0, 0)), url('images/gallery/room-7.jpg');
             background-size: 130%;
             background-repeat: no-repeat;
             background-position-y: (-90px);
@@ -772,51 +771,51 @@
             }
             }
             .shots_one{
-                background-image: url(../images/gallery/member-photo-2.jpg);
+                background-image: url('images/gallery/member-photo-2.jpg');
                 &:hover{
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/member-photo-2.jpg);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url('images/gallery/member-photo-2.jpg');
                 }
             }
             .shots_two{
-                background-image: url(../images/gallery/gallery-6.jpg);
+                background-image: url('images/gallery/gallery-6.jpg');
                 &:hover{
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-6.jpg);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url('images/gallery/gallery-6.jpg');
                 }
             }
             .shots_three{
-                background-image: url(../images/gallery/gallery-2.jpg);
+                background-image: url('images/gallery/gallery-2.jpg');
                 &:hover{
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-2.jpg);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url('images/gallery/gallery-2.jpg');
                 }
             }
             .shots_four{
-                background-image: url(../images/gallery/gallery-1.jpg);
+                background-image: url('images/gallery/gallery-1.jpg');
                 &:hover{
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-1.jpg);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url('images/gallery/gallery-1.jpg');
                 }
             }
             .shots_five{
-                background-image: url(../images/gallery/gallery-8.jpg);
+                background-image: url('images/gallery/gallery-8.jpg');
                 &:hover{
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-8.jpg);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url('images/gallery/gallery-8.jpg');
                 }
             }
             .shots_six{
-                background-image: url(../images/gallery/gallery-4.jpg);
+                background-image: url('images/gallery/gallery-4.jpg');
                 &:hover{
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-4.jpg);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url('images/gallery/gallery-4.jpg');
                 }
             }
             .shots_seven{
-                background-image: url(../images/gallery/gallery-5.jpg);
+                background-image: url('images/gallery/gallery-5.jpg');
                 &:hover{
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-5.jpg);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url('images/gallery/gallery-5.jpg');
                 }
             }
             .shots_height{
-                background-image: url(../images/gallery/gallery-3.jpg);
+                background-image: url('images/gallery/gallery-3.jpg');
                 &:hover{
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../images/gallery/gallery-3.jpg);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url('images/gallery/gallery-3.jpg');
                 }
             }
         }
@@ -1327,7 +1326,7 @@
         font-size: 25px!important;
     }
     .who_can_play{
-        background: linear-gradient(to right, $dark_background, rgba(0, 0, 0, 0)), url(../images/gallery/room-7.jpg);
+        background: linear-gradient(to right, $dark_background, rgba(0, 0, 0, 0)), url('images/gallery/room-7.jpg');
         background-size: cover;
         background-position: center;
         padding-bottom:80px;
