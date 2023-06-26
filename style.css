@@ -7,7 +7,7 @@
 }
 
 main .premiere {
-  background-image: url("../images/gallery/slide-1.jpg");
+  background-image: url("images/gallery/slide-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -597,7 +597,7 @@ main .sixth ul .span_accordeon.display {
   }
 }
 footer {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)), url(../images/gallery/room-7.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)), url("images/gallery/room-7.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -743,7 +743,7 @@ footer .footer_bottom div {
 }
 
 #rooms_header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/gallery/slide-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("images/gallery/slide-1.jpg");
   background-position: 50% 21%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1229,7 +1229,7 @@ footer .footer_bottom div {
 }
 .header_blogs {
   height: 520px;
-  background-image: url(/images/gallery/slide-1.jpg);
+  background-image: url("images/gallery/slide-1.jpg");
   background-position-y: 18%;
   background-size: cover;
 }
@@ -1309,13 +1309,13 @@ footer .footer_bottom div {
   background-position: center center;
 }
 .main_blogs .columns1 .cards .montre {
-  background-image: url(/images/gallery/room-9.jpg);
+  background-image: url("images/gallery/room-9.jpg");
 }
 .main_blogs .columns1 .cards .room {
-  background-image: url(/images/gallery/post-img-2.jpg);
+  background-image: url("images/gallery/post-img-2.jpg");
 }
 .main_blogs .columns1 .cards .exit {
-  background-image: url(/images/gallery/room-7.jpg);
+  background-image: url("images/gallery/room-7.jpg");
 }
 .main_blogs .columns1 .cards .contenu_cards {
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.788);
@@ -1486,22 +1486,22 @@ footer .footer_bottom div {
   font-weight: 500;
 }
 .columns2 .popular_blogs .kidnapped {
-  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/room-3.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url("images/gallery/room-3.jpg");
 }
 .columns2 .popular_blogs .kidnapped:hover {
-  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/room-3.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url("images/gallery/room-3.jpg");
 }
 .columns2 .popular_blogs .what_is {
-  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/slide-2.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url("images/gallery/slide-2.jpg");
 }
 .columns2 .popular_blogs .what_is:hover {
-  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/slide-2.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url("images/gallery/slide-2.jpg");
 }
 .columns2 .popular_blogs .perfect {
-  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url(../images/gallery/room-3.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.9450980392), rgba(27, 27, 27, 0.9450980392)), url("images/gallery/room-3.jpg");
 }
 .columns2 .popular_blogs .perfect:hover {
-  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url(../images/gallery/room-3.jpg);
+  background: linear-gradient(to top, rgba(27, 27, 27, 0.2470588235), rgba(27, 27, 27, 0.2941176471)), url("images/gallery/room-3.jpg");
 }
 .columns2 .popular_blogs h3 {
   font-size: 15px;
@@ -1605,22 +1605,22 @@ footer .footer_bottom div {
   rotate: 90deg;
 }
 .columns2 .photo_shots_blogs .container_photos_all .one_shots {
-  background-image: url(/images/gallery/gallery-7.jpg);
+  background-image: url("images/gallery/gallery-7.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .two_shots {
-  background-image: url(/images/gallery/gallery-6.jpg);
+  background-image: url("images/gallery/gallery-6.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .three_shots {
-  background-image: url(/images/gallery/gallery-2.jpg);
+  background-image: url("images/gallery/gallery-2.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .four_shots {
-  background-image: url(/images/gallery/gallery-4.jpg);
+  background-image: url("images/gallery/gallery-4.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .five_shots {
-  background-image: url(/images/gallery/gallery-5.jpg);
+  background-image: url("images/gallery/gallery-5.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .six_shots {
-  background-image: url(/images/gallery/gallery-3.jpg);
+  background-image: url("images/gallery/gallery-3.jpg");
 }
 
 @media only screen and (max-width: 1600px) {
@@ -2487,6 +2487,7 @@ footer .footer_bottom div {
 .header_homepage .span_slide_container span:hover {
   width: 100%;
   opacity: 1;
+  transition: 0.5s ease-in-out;
 }
 
 @keyframes translate_opacity {
@@ -3765,7 +3766,7 @@ footer .footer_bottom div {
   }
 }
 #contacts_header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/gallery/slide-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("images/gallery/slide-1.jpg");
   background-position: 50% 21%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4406,22 +4407,22 @@ footer .footer_bottom div {
   rotate: 90deg;
 }
 .columns2 .photo_shots_blogs .container_photos_all .one_shots {
-  background-image: url(/images/gallery/gallery-7.jpg);
+  background-image: url("images/gallery/gallery-7.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .two_shots {
-  background-image: url(/images/gallery/gallery-6.jpg);
+  background-image: url("images/gallery/gallery-6.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .three_shots {
-  background-image: url(/images/gallery/gallery-2.jpg);
+  background-image: url("images/gallery/gallery-2.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .four_shots {
-  background-image: url(/images/gallery/gallery-4.jpg);
+  background-image: url("images/gallery/gallery-4.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .five_shots {
-  background-image: url(/images/gallery/gallery-5.jpg);
+  background-image: url("images/gallery/gallery-5.jpg");
 }
 .columns2 .photo_shots_blogs .container_photos_all .six_shots {
-  background-image: url(/images/gallery/gallery-3.jpg);
+  background-image: url("images/gallery/gallery-3.jpg");
 }
 
 @media only screen and (max-width: 1600px) {

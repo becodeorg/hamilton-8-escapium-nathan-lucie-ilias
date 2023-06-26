@@ -1,6 +1,6 @@
 .header_blogs{
     height : 520px;
-    background-image: url(/images/gallery/slide-1.jpg);
+    background-image: url('images/gallery/slide-1.jpg');
     background-position-y: 18%;
     background-size: cover;
     .container_header{
@@ -81,13 +81,13 @@
                 background-position: center center;
             }
             .montre{
-                background-image: url(/images/gallery/room-9.jpg);
+                background-image: url('images/gallery/room-9.jpg');
             }
             .room{
-                background-image: url(/images/gallery/post-img-2.jpg);
+                background-image: url('images/gallery/post-img-2.jpg');
             }
             .exit{
-                background-image: url(/images/gallery/room-7.jpg);
+                background-image: url('images/gallery/room-7.jpg');
             }
             .contenu_cards{
                 box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.788);
@@ -266,23 +266,23 @@
             }
         }
         .kidnapped{
-            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1),url(../images/gallery/room-3.jpg); 
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1),url('images/gallery/room-3.jpg');
             &:hover{
-                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/room-3.jpg);
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url('images/gallery/room-3.jpg');
 
             }
         }
         .what_is{
-            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1),url(../images/gallery/slide-2.jpg); 
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1),url('images/gallery/slide-2.jpg');
             &:hover{
-                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/slide-2.jpg);
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url('images/gallery/slide-2.jpg');
 
             }
         }
         .perfect{
-            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1), url(../images/gallery/room-3.jpg); 
+            background: linear-gradient(to top, #1b1b1bf1,  #1b1b1bf1), url('images/gallery/room-3.jpg');
             &:hover{
-                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url(../images/gallery/room-3.jpg);
+                background: linear-gradient(to top, #1b1b1b3f,  #1b1b1b4b),url('images/gallery/room-3.jpg');
 
             }
         }
@@ -391,22 +391,22 @@
             }
             }
             .one_shots{
-                background-image: url(/images/gallery/gallery-7.jpg);
+                background-image: url('images/gallery/gallery-7.jpg');
             }
             .two_shots{
-                background-image: url(/images/gallery/gallery-6.jpg);  
+                background-image: url('images/gallery/gallery-6.jpg');
             }
             .three_shots{
-                background-image: url(/images/gallery/gallery-2.jpg);
+                background-image: url('images/gallery/gallery-2.jpg');
             }
             .four_shots{
-                background-image: url(/images/gallery/gallery-4.jpg);
+                background-image: url('images/gallery/gallery-4.jpg');
             }
             .five_shots{
-                background-image: url(/images/gallery/gallery-5.jpg);
+                background-image: url('images/gallery/gallery-5.jpg');
             }
             .six_shots{
-                background-image: url(/images/gallery/gallery-3.jpg);
+                background-image: url('images/gallery/gallery-3.jpg');
             }
         }   
     }
