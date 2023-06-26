@@ -26,7 +26,7 @@ addEventListener("resize", (event) => {
 });
 
 function setDynamic() {
-    fetch("json/rooms.json")
+    fetch("../json/rooms.json")
         .then(response => response.json())
         .then(json => {
             for (let room of json) { // pour chaque room du .json
