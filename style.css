@@ -1999,7 +1999,6 @@ footer .footer_bottom div {
   background-color: #1B1B1B;
   color: #717171;
   font-family: "Hind", sans-serif;
-
 }
 #room_body #room_header {
   display: flex;
@@ -2147,386 +2146,10 @@ footer .footer_bottom div {
   margin-top: 50px;
   font-size: 55px;
   color: white;
-  margin-bottom: 1000px; /* Placeholder calendar */
+  margin-bottom: 50px; /* Placeholder calendar */
 }
-#room_body #room_main #room_other {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 75px;
-}
-#room_body #room_main #room_other h2 {
-  margin-left: 10%;
-  font-size: 32px;
-  color: white;
-}
-#room_body #room_main #room_other .space-between {
-  display: flex;
-  justify-content: space-between;
+#room_body #room_main #room_booking img {
   margin-bottom: 50px;
-}
-#room_body #room_main #room_other .space-between #other_carousel {
-  margin-right: 10%;
-}
-#room_body #room_main #room_other .space-between #other_carousel a i {
-  border: 1px solid #969696;
-  padding: 10px 15px 10px 15px;
-  border-radius: 50px;
-  color: white;
-}
-#room_body #room_main #room_other .space-between #other_carousel a i:hover {
-  background-color: #969696;
-  cursor: pointer;
-}
-#room_body #room_main #room_other #other_rooms {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2%;
-  margin: 0 10% 100px 10%;
-}
-#room_body #room_main #room_other #other_rooms .room_card {
-  align-self: center;
-  justify-self: center;
-  height: 450px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 35px;
-  box-shadow: 0 0 1em black;
-}
-#room_body #room_main #room_other #other_rooms .room_card:hover {
-  background-size: 250% !important;
-  cursor: pointer;
-}
-#room_body #room_main #room_other #other_rooms .room_card .room_card_difficulty {
-  margin-top: 70%;
-  margin-bottom: 15px;
-}
-#room_body #room_main #room_other #other_rooms .room_card .room_card_difficulty i {
-  color: #3C3F3E;
-  margin: 2.5px;
-  text-shadow: #1B1B1B 1px 1px;
-}
-#room_body #room_main #room_other #other_rooms .room_card .room_card_name {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-#room_body #room_main #room_other #other_rooms .room_card .room_card_infos {
-  display: flex;
-}
-#room_body #room_main #room_other #other_rooms .room_card .room_card_infos div {
-  display: flex;
-}
-#room_body #room_main #room_other #other_rooms .room_card .room_card_infos div i {
-  margin-right: 11px;
-  position: relative;
-  top: 4px;
-}
-#room_body #room_main #room_other #other_rooms .room_card .room_card_infos div p {
-  margin-right: 15px;
-  color: #3C3F3E;
-  font-weight: bold;
-}
-#room_body hr {
-  border-color: #717171;
-  background-color: #717171;
-}
-
-@media only screen and (max-width: 1600px) {
-  #room_body #room_main #room_infos {
-    padding-bottom: 150px;
-  }
-  #room_body #room_main #room_infos #room_datas {
-    width: 500px;
-  }
-  #room_body #room_main #room_infos #room_description {
-    width: 700px;
-  }
-  #room_body #room_main #room_other #other_rooms {
-    column-gap: 2%;
-    margin: 0 10% 100px 10%;
-  }
-  #room_body #room_main #room_other #other_rooms .room_card {
-    height: 350px;
-    width: 300px;
-  }
-}
-@media only screen and (max-width: 1225px) {
-  #room_body #room_main #room_infos {
-    font-size: 12px;
-  }
-  #room_body #room_main #room_infos #room_datas {
-    margin-bottom: 25px;
-    width: 400px;
-    margin-left: 50px;
-  }
-  #room_body #room_main #room_infos #room_datas #datas_difficulty div {
-    font-size: 20px;
-  }
-  #room_body #room_main #room_infos #room_datas #datas_difficulty div i {
-    margin-right: 5px;
-  }
-  #room_body #room_main #room_infos #room_datas #datas_players div {
-    font-size: 20px;
-  }
-  #room_body #room_main #room_infos #room_datas #datas_time div {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-  #room_body #room_main #room_infos #room_description {
-    position: absolute;
-    width: 500px;
-  }
-  #room_body #room_main #room_infos #room_contact {
-    width: 230px;
-    left: 75px;
-  }
-  #room_body #room_main #room_infos #room_contact div {
-    width: 100%;
-    font-size: 15px;
-  }
-  #room_body #room_main #room_infos #room_contact div span {
-    margin-left: 15px;
-  }
-  #room_body #room_main #room_infos #room_contact div:nth-child(7) span {
-    font-size: 11px;
-  }
-  #room_body #room_main #room_infos #room_contact a {
-    margin-top: 25px;
-    padding: 10px 8px 10px 8px;
-    width: 90px;
-  }
-  #room_body #room_main #room_other #other_rooms {
-    column-gap: 2%;
-    margin: 0 10% 100px 10%;
-  }
-  #room_body #room_main #room_other #other_rooms .room_card {
-    height: 155px;
-    width: 155px;
-  }
-  #room_body #room_main #room_other #other_rooms .room_card .room_card_difficulty {
-    margin-top: 10%;
-    font-size: 10px;
-  }
-  #room_body #room_main #room_other #other_rooms .room_card .room_card_name {
-    font-size: 18px;
-  }
-  #room_body #room_main #room_other #other_rooms .room_card .room_card_infos {
-    flex-wrap: wrap;
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 850px) {
-  #room_infos {
-    position: relative;
-    top: -200px;
-  }
-  #room_infos #room_contact {
-    float: inherit !important;
-    position: relative;
-    top: 750px;
-    width: 100% !important;
-    left: 0 !important;
-  }
-}
-@media only screen and (max-width: 650px) {
-  #room_header {
-    height: 400px !important;
-  }
-  #room_header h1 {
-    font-size: 28px !important;
-    margin-bottom: 30px !important;
-    margin-left: 5% !important;
-  }
-  #room_infos {
-    margin: 0 0 350px 0 !important;
-  }
-  #room_infos #room_contact {
-    margin-left: 10%;
-    width: 80% !important;
-    top: 950px;
-  }
-  #room_infos #room_description {
-    margin-left: 5%;
-    width: 90% !important;
-  }
-  #room_infos #room_datas {
-    width: 300px !important;
-    margin-left: 0 !important;
-  }
-  #other_rooms {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-  #other_rooms a {
-    width: 93% !important;
-    height: 80vw !important;
-  }
-  #other_rooms a .room_card_difficulty {
-    font-size: 5vw !important;
-  }
-  #other_rooms a .room_card_name {
-    font-size: 5vw !important;
-  }
-  #other_rooms a .room_card_infos {
-    font-size: 5vw !important;
-  }
-}
-.header_homepage {
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
-
-}
-#room_body #room_header {
-  display: flex;
-  align-items: end;
-  height: 800px;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 100px;
-}
-#room_body #room_header h1 {
-  margin-bottom: 100px;
-  margin-left: 15%;
-  color: white;
-  font-size: 75px;
-  font-family: "Montserrat", sans-serif;
-}
-#room_body #room_main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#room_body #room_main #room_infos {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0 10% 150px 10%;
-}
-#room_body #room_main #room_infos #room_datas {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: space-between;
-  width: 800px;
-  text-align: center;
-  margin-left: 100px;
-}
-#room_body #room_main #room_infos #room_datas #datas_difficulty {
-  display: flex;
-  flex-direction: column;
-}
-#room_body #room_main #room_infos #room_datas #datas_difficulty div {
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-#room_body #room_main #room_infos #room_datas #datas_difficulty div i {
-  margin-right: 5px;
-}
-#room_body #room_main #room_infos #room_datas #datas_difficulty p {
-  color: #969696;
-}
-#room_body #room_main #room_infos #room_datas #datas_players {
-  display: flex;
-  flex-direction: column;
-}
-#room_body #room_main #room_infos #room_datas #datas_players div {
-  justify-content: center;
-  align-items: baseline;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-#room_body #room_main #room_infos #room_datas #datas_players div i {
-  margin-right: 20px;
-}
-#room_body #room_main #room_infos #room_datas #datas_players p {
-  color: #969696;
-}
-#room_body #room_main #room_infos #room_datas #datas_time {
-  display: flex;
-  flex-direction: column;
-}
-#room_body #room_main #room_infos #room_datas #datas_time div {
-  justify-content: center;
-  align-items: baseline;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-#room_body #room_main #room_infos #room_datas #datas_time div i {
-  margin-right: 20px;
-}
-#room_body #room_main #room_infos #room_datas #datas_time p {
-  color: #969696;
-}
-#room_body #room_main #room_infos #room_description {
-  position: absolute;
-  width: 1000px;
-}
-#room_body #room_main #room_infos #room_contact {
-  float: right;
-  width: 380px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 150px;
-}
-#room_body #room_main #room_infos #room_contact div {
-  width: 100%;
-  font-size: 24px;
-  margin: 10px 0 10px 0;
-}
-#room_body #room_main #room_infos #room_contact div i {
-  color: #969696;
-}
-#room_body #room_main #room_infos #room_contact div .fa-phone {
-  transform: rotateY(180deg);
-}
-#room_body #room_main #room_infos #room_contact div span {
-  margin-left: 20px;
-  font-weight: initial;
-}
-#room_body #room_main #room_infos #room_contact div:nth-child(7) span {
-  font-size: 20px;
-}
-#room_body #room_main #room_infos #room_contact div:nth-child(5) span {
-  color: #969696;
-}
-#room_body #room_main #room_infos #room_contact div:nth-child(3) span {
-  color: #969696;
-}
-#room_body #room_main #room_infos #room_contact a {
-  text-align: center;
-  margin-top: 50px;
-  border: 1px solid #F60B0E;
-  border-radius: 50px;
-  padding: 20px 15px 20px 15px;
-  background-color: #F60B0E;
-  color: white;
-  width: 180px;
-}
-#room_body #room_main #room_booking {
-  margin-top: 250px;
-  background-color: #222222;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#room_body #room_main #room_booking hr {
-  margin-top: 150px;
-  width: 50px;
-  text-align: center;
-  height: 3px;
-}
-#room_body #room_main #room_booking h2 {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 55px;
-  color: white;
-  margin-bottom: 1000px; /* Placeholder calendar */
 }
 #room_body #room_main #room_other {
   width: 100%;
@@ -4079,6 +3702,164 @@ footer .footer_bottom div {
     transform: translateX(80%);
   }
 }
+#contacts_header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/gallery/slide-1.jpg");
+  background-position: 50% 21%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contacts_header h1 {
+  font-size: 120px;
+  font-family: "Montserrat", sans-serif;
+  color: #fefefe;
+}
+#contacts_header h1 span {
+  color: #F60B0E;
+}
+#contacts_header p {
+  color: #fefefe;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contacts_header p .grey {
+  color: #3C3F3E;
+}
+#contacts_header p .headerSize {
+  font-size: 44px;
+  top: -4px;
+  position: relative;
+  margin: 5px;
+}
+
+#contacts_main {
+  background-color: #1B1B1B;
+  color: #717171;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Hind", sans-serif;
+}
+#contacts_main #contacts_main_top {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 160px 0 160px 0;
+}
+#contacts_main #contacts_main_top #getInTouch {
+  min-width: 300px;
+  max-width: 300px;
+  margin-right: 15px;
+}
+#contacts_main #contacts_main_top #getInTouch h2 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 40px;
+}
+#contacts_main #contacts_main_top #getInTouch h2 + p {
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+#contacts_main #contacts_main_top #getInTouch ul li {
+  font-size: 30px;
+  display: flex;
+  margin-bottom: 35px;
+}
+#contacts_main #contacts_main_top #getInTouch ul li i {
+  color: white;
+  margin-right: 40px;
+  align-self: center;
+}
+#contacts_main #contacts_main_top #getInTouch ul li p {
+  font-size: 18px;
+}
+#contacts_main #contacts_main_top #contact_Form {
+  width: 55%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#contacts_main #contacts_main_top #contact_Form h2 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 40px;
+}
+#contacts_main #contacts_main_top #contact_Form div {
+  display: flex;
+  justify-content: space-between;
+}
+#contacts_main #contacts_main_top #contact_Form div input {
+  color: white;
+  background-color: #1B1B1B;
+  border: none;
+  border-bottom: 1px solid #717171;
+  padding-bottom: 20px;
+  margin-bottom: 80px;
+  width: 45%;
+}
+#contacts_main #contacts_main_top #contact_Form textarea {
+  color: white;
+  background-color: #1B1B1B;
+  border: none;
+  border-bottom: 1px solid #717171;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#contacts_main #contacts_main_top #contact_Form a {
+  text-align: center;
+  color: white;
+  border: 1px solid #F60B0E;
+  background-color: #F60B0E;
+  border-radius: 25px;
+  padding: 12px 10vw 12px 10vw;
+}
+#contacts_main #contacts_main_top #contact_Form a:hover {
+  cursor: pointer;
+}
+#contacts_main .map {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+#contacts_main .map iframe {
+  filter: saturate(0%) brightness(50%) contrast(100%);
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1053px) {
+  #contacts_main #contacts_main_top {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 702px) {
+  #contacts_header {
+    height: 350px;
+    background-size: 250%;
+    background-position: 50% 10%;
+  }
+  #contacts_header h1 {
+    font-size: 35px;
+  }
+  #contacts_main #contacts_main_top {
+    align-items: center;
+    flex-direction: column;
+  }
+  #contacts_main #contacts_main_top #getInTouch {
+    margin-bottom: 50px;
+  }
+  #contacts_main #contacts_main_top #contact_Form {
+    width: 90%;
+  }
+}
 .header_blog_single {
   height: 520px;
   background-image: url(/images/gallery/slide-1.jpg);
@@ -5084,161 +4865,5 @@ footer .footer_bottom div {
     bottom: 0%;
   }
 }
-#contacts_header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/gallery/slide-1.jpg");
-  background-position: 50% 21%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 510px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#contacts_header h1 {
-  font-size: 120px;
-  font-family: "Montserrat", sans-serif;
-  color: #fefefe;
-}
-#contacts_header h1 span {
-  color: #F60B0E;
-}
-#contacts_header p {
-  color: #fefefe;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#contacts_header p .grey {
-  color: #3C3F3E;
-}
-#contacts_header p .headerSize {
-  font-size: 44px;
-  top: -4px;
-  position: relative;
-  margin: 5px;
-}
 
-#contacts_main {
-  background-color: #1B1B1B;
-  color: #717171;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Hind", sans-serif;
-}
-#contacts_main #contacts_main_top {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-  margin: 160px 0 160px 0;
-}
-#contacts_main #contacts_main_top #getInTouch {
-  min-width: 300px;
-  max-width: 300px;
-  margin-right: 15px;
-}
-#contacts_main #contacts_main_top #getInTouch h2 {
-  color: white;
-  font-size: 44px;
-  margin-bottom: 40px;
-}
-#contacts_main #contacts_main_top #getInTouch h2 + p {
-  margin-bottom: 60px;
-  font-size: 18px;
-}
-#contacts_main #contacts_main_top #getInTouch ul li {
-  font-size: 30px;
-  display: flex;
-  margin-bottom: 35px;
-}
-#contacts_main #contacts_main_top #getInTouch ul li i {
-  color: white;
-  margin-right: 40px;
-  align-self: center;
-}
-#contacts_main #contacts_main_top #getInTouch ul li p {
-  font-size: 18px;
-}
-#contacts_main #contacts_main_top #contact_Form {
-  width: 55%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-#contacts_main #contacts_main_top #contact_Form h2 {
-  color: white;
-  font-size: 44px;
-  margin-bottom: 40px;
-}
-#contacts_main #contacts_main_top #contact_Form div {
-  display: flex;
-  justify-content: space-between;
-}
-#contacts_main #contacts_main_top #contact_Form div input {
-  color: white;
-  background-color: #1B1B1B;
-  border: none;
-  border-bottom: 1px solid #717171;
-  padding-bottom: 20px;
-  margin-bottom: 80px;
-  width: 45%;
-}
-#contacts_main #contacts_main_top #contact_Form textarea {
-  color: white;
-  background-color: #1B1B1B;
-  border: none;
-  border-bottom: 1px solid #717171;
-  height: 200px;
-  width: 100%;
-  margin-bottom: 50px;
-}
-#contacts_main #contacts_main_top #contact_Form a {
-  text-align: center;
-  color: white;
-  border: 1px solid #F60B0E;
-  background-color: #F60B0E;
-  border-radius: 25px;
-  padding: 12px 10vw 12px 10vw;
-}
-#contacts_main #contacts_main_top #contact_Form a:hover {
-  cursor: pointer;
-}
-#contacts_main .map {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-}
-#contacts_main .map iframe {
-  filter: saturate(0%) brightness(50%) contrast(100%);
-  width: 100%;
-  height: 100%;
-}
-
-@media only screen and (max-width: 1053px) {
-  #contacts_main #contacts_main_top {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 702px) {
-  #contacts_header {
-    height: 350px;
-    background-size: 250%;
-    background-position: 50% 10%;
-  }
-  #contacts_header h1 {
-    font-size: 35px;
-  }
-  #contacts_main #contacts_main_top {
-    align-items: center;
-    flex-direction: column;
-  }
-  #contacts_main #contacts_main_top #getInTouch {
-    margin-bottom: 50px;
-  }
-  #contacts_main #contacts_main_top #contact_Form {
-    width: 90%;
-  }
-}
+/*# sourceMappingURL=style.css.map */
