@@ -53,11 +53,26 @@ footer{
             }
         }
         .linksul{
-            li{
-                margin-bottom: 30px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: 1px;
+            width: 175px;
+            ul{
+                li{
+                    margin-bottom: 30px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    &:hover{
+                        list-style-type: disc;
+                        color: red;
+                        opacity: 1;
+                    }
+                    a{
+                        cursor: pointer;
+                        &:hover{
+                            color: white;
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
         }
         .hoursul{
