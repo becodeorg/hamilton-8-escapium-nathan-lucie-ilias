@@ -2154,7 +2154,10 @@ footer .footer_bottom div {
   margin-top: 50px;
   font-size: 55px;
   color: white;
-  margin-bottom: 1000px; /* Placeholder calendar */
+  margin-bottom: 50px; /* Placeholder calendar */
+}
+#room_body #room_main #room_booking img {
+  margin-bottom: 50px;
 }
 #room_body #room_main #room_other {
   width: 100%;
