@@ -1,6 +1,6 @@
 main{
     .premiere{
-        background-image: url("images/gallery/slide-1.jpg");
+        background-image: url("../images/gallery/slide-1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
@@ -393,6 +393,10 @@ main{
                         margin-left: 20px;
                         opacity: 0.7;
                         font-size: 18px;
+                        &:hover{
+                            color: $red;
+                            transition: 0.3s ease;
+                        }
                     }
                 div{
                     height: 20px;
@@ -432,11 +436,12 @@ main{
                     font-family: $paragraphs;
                     font-weight: 500;
                     font-size: 12px;
-                    letter-spacing: 0.5px;
+                    letter-spacing: 0.5px;                
                 }
             }
             p.accordeon{
                 display: block;
+                animation : translate_opacity 1s;
             }
             .span_accordeon.display{
                 display: none;
