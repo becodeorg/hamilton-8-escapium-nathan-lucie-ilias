@@ -1026,6 +1026,14 @@ footer .footer_bottom div {
 #top_nav #leftTopBar #nav_links .containerLigneRed {
   position: relative;
 }
+#top_nav #leftTopBar #nav_links .containerLigneRed:hover a {
+  color: #fefefe;
+  transition: 0.5s ease-in-out;
+}
+#top_nav #leftTopBar #nav_links .containerLigneRed:hover .ligne_red {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
 #top_nav #leftTopBar #nav_links .containerLigneRed .word_on_red_ligne {
   z-index: 2;
   color: #fefefe;

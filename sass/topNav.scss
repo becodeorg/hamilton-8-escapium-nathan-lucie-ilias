@@ -38,6 +38,16 @@
             }   
             .containerLigneRed{
                 position: relative;
+                &:hover{
+                    a{
+                        color: $white_font;
+                        transition: 0.5s ease-in-out;
+                    }
+                    .ligne_red{
+                        opacity: 1;
+                        transition: 0.5s ease-in-out;
+                    }    
+                }
                 .word_on_red_ligne {
                     z-index: 2;  
                     color : $white_font;
