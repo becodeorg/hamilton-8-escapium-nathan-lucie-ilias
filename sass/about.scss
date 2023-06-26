@@ -447,6 +447,19 @@ main{
 }
 
 @media screen and (max-width:1000px){
+    .fourth{
+        ul{
+            display: flex;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+            li{
+                width: 100%;
+                justify-content: space-around;
+                display: grid;
+            }
+        }
+    }
     .carousel_fifth{
         width: 65%;
         height: 425px;
@@ -588,6 +601,7 @@ main{
                 flex-wrap: wrap;
                 column-gap: 30px;
                 li{
+                    width: 100%;
                     img{
                         width: 200px;
                     }
